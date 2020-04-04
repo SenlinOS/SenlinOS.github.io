@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.58.3" />
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#1b1b1b">
-	<title>SENLINOS ON THE WEB</title>
+	<title>L(X)ubuntu中设置 Wacom CTL-671 | SENLINOS ON THE WEB</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
         <link rel="stylesheet" href="/css/float.css">
         <link rel="stylesheet" href="/css/custom.css">
 	<link rel="stylesheet" href="/css/themes/mysite.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
-	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="SENLINOS ON THE WEB">
 	<link rel="manifest" href="/manifest.json">
 		
 </head>
@@ -74,79 +72,148 @@
 	<div class="primary">
 	
 	<main class="main">
-			<div class="cards">
-					<div class="card card--1col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/gimagereader-and-subtitleeditor/">提取图片上的文字 &amp; 新的字幕编辑器</a></h1>
-	<div class="post__content">提取图片上的文字： 在看图片类的复杂外文时，想找个在线图片翻译网站～但没找到！ 看一些帖子说手机安装些翻译应用就可以了！但我感觉不方便～我也不想</div>
-	<div style="text-align: right;"><a class="post__title-link" href="/post/gimagereader-and-subtitleeditor/">Read more…</a></div>
-</article>
+		<div class="single block">
+			<article class="post">
+	<div class="post__meta meta mb">
+	<time class="post__meta-published meta-published" datetime="2018-04-29T00:09:52&#43;08:00">2018-04-29</time>
+	</div>
 
-					</div>
-					<div class="card card--1col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/spyderx-on-xubuntu/">SpyderX on Xubuntu 显示器校色</a></h1>
-	<div class="post__content">前段时间购买了 SpyderX Pro 显示器校色仪。 一直在摸索怎样使用，毕竟在 GNU/Linux 系统中这方面的资料很少！ 在 Xubuntu 系统的软件中心中就有校色软件 DisplayCAL，但</div>
-	<div style="text-align: right;"><a class="post__title-link" href="/post/spyderx-on-xubuntu/">Read more…</a></div>
-</article>
+				<center><h1 class="post__title">L(X)ubuntu中设置 Wacom CTL-671</h1></center>
+				<div class="post__content"><p>在 Lubuntu 系统中不需要图形界面也可以设置 Wacom板子。
+<br/>先安装 xserver-xorg-input-wacom，再安装 xinput-calibrator，在“系统工具”菜单里启动 Calibrate Touchscreen 这个软件，
+点击四个“校准十字”后在终端中可以看到 Wacom板子的信息。</p>
 
-					</div>
-					<div class="card card--1col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/beautiful-icon-for-qjoypad/">制作了QjoyPad的美观图标</a></h1>
-	<div class="post__content">我一直使用 T9键盘 进行软件操作，长时间保持一种工作姿势，手指会有些疼！ 所以我想到使用游戏手柄来操作软件，改变手指的操作姿势来缓解疲劳。 在Xu</div>
-	<div style="text-align: right;"><a class="post__title-link" href="/post/beautiful-icon-for-qjoypad/">Read more…</a></div>
-</article>
+<p>查看板子的 x、y 的坐标参数，我的板子的坐标参数是：max_x=21648, max_y=13530</p>
 
-					</div>
-					<div class="card card--1col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/xubuntu-uefi-grub/">解决安装单系统Xubuntu时grub安装失败</a></h1>
-	<div class="post__content">我一直贯彻“不使用盗版系统与软件来创作自己的CG作品”， 但彻底抛弃盗版是个循序渐进的过程，我不能一下就抛弃掉盗版的Win7, 因为要使用网银或</div>
-	<div style="text-align: right;"><a class="post__title-link" href="/post/xubuntu-uefi-grub/">Read more…</a></div>
-</article>
+<p><img src="/img/wacom-ctl671xy.png"/></p>
 
-					</div>
-					<div class="card card--1col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/modify-delux-t9-keyboard-mapping/">在GNU/Linux中修改T9键盘映射</a></h1>
-	<div class="post__content">我的初代Delux(多彩)T9单手键盘已经使用3年多了，主要作为软件的快捷键使用。 现在新T9的型号已经改为T9U，这是我最喜欢的单手键盘版型</div>
-	<div style="text-align: right;"><a class="post__title-link" href="/post/modify-delux-t9-keyboard-mapping/">Read more…</a></div>
-</article>
+<p>在终端输入 xsetwacom &ndash;list 命令，会看到自己板子的设备名字：
+<br/>Wacom Bamboo One M Pen stylus</p>
 
-					</div>
-					<div class="card card--1col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/gimp-the-focus-automatically-returns-to-the-canvas-window/">GIMP焦点自动返回到画布窗口</a></h1>
-	<div class="post__content">2019-10-09更新：原来有四个设置，现在两个设置就可以。 直到 GIMP 2.10.x 单击其他对话框的选项后，画布窗口会失去焦点。 此时按下空格键相关快捷键将</div>
-	<div style="text-align: right;"><a class="post__title-link" href="/post/gimp-the-focus-automatically-returns-to-the-canvas-window/">Read more…</a></div>
-</article>
+<p>现在的就是板子设置参数，点击查看 Wacom CTL-671 板子的sh脚本参数：
+<br/><a target="_blank" rel="nofollow" href="/databox/linuxwacom-ctl671-settings.txt"><strong>&gt; sh脚本参数</strong></a></p>
 
-					</div>
-					<div class="card card--1col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/chromium-keyrings-and-usb-soundcard/">解决打开Chromium需要密码与USB声卡</a></h1>
-	<div class="post__content">2019-03-29更新：Firefox与Chromium都使用，各有优点。 火狐中浏览PDF的功能很全面。插件多、安装也方便。 现在Chrom</div>
-	<div style="text-align: right;"><a class="post__title-link" href="/post/chromium-keyrings-and-usb-soundcard/">Read more…</a></div>
-</article>
+<p><strong>参数解析：</strong></p>
 
-					</div>
-					<div class="card card--1col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/mpv_and_blender-vse-transform-tool/">MPV 与 Blender视频编辑插件</a></h1>
-	<div class="post__content">MPV 播放器： 2019-03-26更新：现在使用的是GNOME-MPV，操作是一样的。 在 GNU/Linux 系统中我最喜欢的影音播放器就是 MPV， 其界面非常简洁，</div>
-	<div style="text-align: right;"><a class="post__title-link" href="/post/mpv_and_blender-vse-transform-tool/">Read more…</a></div>
-</article>
+<ul>
+<li><p>tabletstylus=&ldquo;Wacom Bamboo One M Pen stylus&rdquo;
+<br/>就是之前在终端看到的自己板子的设备名字。</p></li>
 
-					</div>
-			</div>
-	</main>
-	
-<div class="pagination block">
-				<span class="pagination__item pagination__item--active" data-total="2">1</span>
-				<a class="pagination__item pagination__item--desktop" href="/page/2/">2</a>
+<li><p>default area : 0 0 21648 12177
+<br/>这个参数是板子x，y 坐标对齐 16 : 9 比例的显示器屏幕 （对齐屏幕比例）</p></li>
+</ul>
+
+<p>你会发现 y 的参数变少了，因为板子的默认比例比 16 : 9 要大，可以使用 GIMP 的“缩放图像”来计算。
+可以在 GIMP 中新建个 1920 x 1080 的文件，然后在“缩放图像”的保持比例下，
+把 1920 改成板子的 x 坐标数值：21648，这样就算出了对应显示器比例的 y 坐标数值：12177</p>
+
+<p><img src="/img/xy16-9.png"/></p>
+
+<ul>
+<li><p>screenX=1920，screenY=1080，是显示器的分辨率。</p></li>
+
+<li><p>xsetwacom &ndash;set &ldquo;$tabletstylus&rdquo; Button 2 3
+<br/>xsetwacom &ndash;set &ldquo;$tabletstylus&rdquo; Button 3 2
+<br/>这两个是压感笔的侧键，Button 2是下侧键，Button 3是上侧键。
+<br/>后面的数值2是 [中键] ，3代表 [右键]</p></li>
+
+<li><p>xsetwacom set &lsquo;Wacom Bamboo One M Pen stylus&rsquo; rotate half
+<br/>最后这行参数是把板子区域旋转180度，不旋转可以把这个参数删掉。</p></li>
+</ul>
+
+<p>新建个空白文件，把已经写好的脚本参数复制进去，命名为 Wacom671.sh 保存。
+ <br/>右键 Wacom671.sh 打开 [文件属性]，把权限中的执行参数改为 [任何人]</p>
+
+<p>打开 Lubuntu 系统菜单，首选项 -&gt; LXSession 配置
+<br/>在 [自动启动] 中添加 Wacom671.sh 文件的路径，点击 [添加] 按钮完成操作。
+<br/>注销再登录系统，Wacom CTL-671 板子就可以使用设置了，板子会与显示器对齐比例，侧键也是自定义的。</p>
+
+<hr />
+
+<p><strong>Xubuntu系统或Xfce桌面环境中的自启动设置：</strong></p>
+
+<ul>
+<li>打开Xfce的设置管理器 -&gt; 会话和启动</li>
+</ul>
+
+<p><img src="/img/xfce-seting.jpg"/></p>
+
+<ul>
+<li>在<code>应用程序自启动</code>选项中点击<code>添加</code>按钮，填写上<code>名称</code>，<code>命令</code>栏中开打刚刚写好的 Wacom671.sh 文件</li>
+</ul>
+
+<p><img src="/img/add-wacom.png"/></p>
+
+<ul>
+<li>点击确定，注销再登录系统，板子即可使用。</li>
+</ul>
+
+<hr />
+
+<p><center>
+Post License:
+<br /><a rel="noopener noreferrer" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="/img/cc-by-sa.png" alt="cc-by-sa"/></a>
+</center><p></p>
+</div>
+				
+				<footer class="post__footer">
+					
+<div class="post__tags">
+			<a class="post__tag btn" href="/tags/wacom/">wacom</a>
 </div>
 
+					
+<div class="post__share share">
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+
+
+      <div class="pagination">
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="/post/mypaint-brushes-for-gimp-2.10-by_senlinos/">
+                <span class="button__icon">&lt;</span>
+                <span class="button__text">MyPaint-Brushes for GIMP 2.10</span>
+              </a>
+            </span>
+          
+          
+            <span class="button next">
+              <a href="/post/azpainter-2.1.2-and-my-git-warehouse/">
+                <span class="button__text">AzPainter 2.1.2 发布 与 我的Git-仓库</span>
+                <span class="button__icon">></span>
+              </a>
+            </span>
+          
+        </div>
+    </div>
+
+	
+<div class="authorbox block">
+	<div class="author">
+		<figure class="author__avatar">
+			<img class="author__img" alt="SenlinOS (森林OS) avatar" src="/img/author.jpg" height="90" width="90">
+		</figure>
+		<div class="author__body">
+			<div class="author__name">
+				SenlinOS (森林OS)
+			</div>
+			<div class="author__bio">Comics Art with GNU/Linux</div>
+                <img src="/img/yuyu.png"/>
+		</div>
+	</div>
+</div>
+
+	
+
+
+
+	
 <div class="page block">
 			<div style="text-align: right;"><a href="#top" target="_self"><img style="border: 0px solid ; width: 32px; height: 32px;" alt="Up" title="Up" src="/img/up.svg"></a></div>
 </div>

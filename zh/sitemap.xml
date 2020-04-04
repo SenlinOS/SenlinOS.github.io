@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/zh/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/support-me/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/support-me/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/support-me/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/freesoftware/</loc>
+    <lastmod>2019-11-19T17:51:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/post/</loc>
+    <lastmod>2019-11-19T17:51:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/</loc>
+    <lastmod>2019-11-19T17:51:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/</loc>
+    <lastmod>2019-11-19T17:51:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/ubuntu/</loc>
+    <lastmod>2019-11-19T17:51:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/post/gimagereader-and-subtitleeditor/</loc>
+    <lastmod>2019-11-19T17:51:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/hardware/</loc>
+    <lastmod>2019-06-16T19:01:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/post/spyderx-on-xubuntu/</loc>
+    <lastmod>2019-06-16T19:01:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/post/beautiful-icon-for-qjoypad/</loc>
+    <lastmod>2019-04-27T13:51:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/post/xubuntu-uefi-grub/</loc>
+    <lastmod>2019-03-19T16:19:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/post/modify-delux-t9-keyboard-mapping/</loc>
+    <lastmod>2018-11-29T00:38:43+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/gimp/</loc>
+    <lastmod>2018-11-11T09:25:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/post/gimp-the-focus-automatically-returns-to-the-canvas-window/</loc>
+    <lastmod>2018-11-11T09:25:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/chromium/</loc>
+    <lastmod>2018-07-24T15:32:24+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/post/chromium-keyrings-and-usb-soundcard/</loc>
+    <lastmod>2018-07-24T15:32:24+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/blender/</loc>
+    <lastmod>2018-05-31T12:45:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/mpv/</loc>
+    <lastmod>2018-05-31T12:45:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/post/mpv_and_blender-vse-transform-tool/</loc>
+    <lastmod>2018-05-31T12:45:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/mcomix/</loc>
+    <lastmod>2018-05-12T17:54:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/post/lubuntu-18.04-blender-mcomix/</loc>
+    <lastmod>2018-05-12T17:54:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/brushes/</loc>
+    <lastmod>2018-05-01T11:35:37+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/post/mypaint-brushes-for-gimp-2.10-by_senlinos/</loc>
+    <lastmod>2018-05-01T11:35:37+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/post/linuxwacom-ctl671-settings/</loc>
+    <lastmod>2018-04-29T00:09:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/wacom/</loc>
+    <lastmod>2018-04-29T00:09:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/azpainter/</loc>
+    <lastmod>2018-04-24T10:11:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/post/azpainter-2.1.2-and-my-git-warehouse/</loc>
+    <lastmod>2018-04-24T10:11:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/warehouse/</loc>
+    <lastmod>2018-04-24T10:11:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/post/azpainter-2.1.1-for-linux-colorwheel-analysis/</loc>
+    <lastmod>2017-10-18T00:19:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/post/translated-chinese-simplified-interface-for-azpainter-2-linux/</loc>
+    <lastmod>2017-04-24T21:14:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/categories/"
+                />
+  </url>
+  
+</urlset>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on SENLINOS ON THE WEB</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on SENLINOS ON THE WEB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Nov 2019 17:51:44 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FreeSoftware</title>
+      <link>/tags/freesoftware/</link>
+      <pubDate>Tue, 19 Nov 2019 17:51:44 +0800</pubDate>
+      
+      <guid>/tags/freesoftware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>/tags/ubuntu/</link>
+      <pubDate>Tue, 19 Nov 2019 17:51:44 +0800</pubDate>
+      
+      <guid>/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>/tags/hardware/</link>
+      <pubDate>Sun, 16 Jun 2019 19:01:55 +0800</pubDate>
+      
+      <guid>/tags/hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GIMP</title>
+      <link>/tags/gimp/</link>
+      <pubDate>Sun, 11 Nov 2018 09:25:27 +0800</pubDate>
+      
+      <guid>/tags/gimp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chromium</title>
+      <link>/tags/chromium/</link>
+      <pubDate>Tue, 24 Jul 2018 15:32:24 +0800</pubDate>
+      
+      <guid>/tags/chromium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blender</title>
+      <link>/tags/blender/</link>
+      <pubDate>Thu, 31 May 2018 12:45:35 +0800</pubDate>
+      
+      <guid>/tags/blender/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MPV</title>
+      <link>/tags/mpv/</link>
+      <pubDate>Thu, 31 May 2018 12:45:35 +0800</pubDate>
+      
+      <guid>/tags/mpv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mcomix</title>
+      <link>/tags/mcomix/</link>
+      <pubDate>Sat, 12 May 2018 17:54:16 +0800</pubDate>
+      
+      <guid>/tags/mcomix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brushes</title>
+      <link>/tags/brushes/</link>
+      <pubDate>Tue, 01 May 2018 11:35:37 +0800</pubDate>
+      
+      <guid>/tags/brushes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wacom</title>
+      <link>/tags/wacom/</link>
+      <pubDate>Sun, 29 Apr 2018 00:09:52 +0800</pubDate>
+      
+      <guid>/tags/wacom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AzPainter</title>
+      <link>/tags/azpainter/</link>
+      <pubDate>Tue, 24 Apr 2018 10:11:47 +0800</pubDate>
+      
+      <guid>/tags/azpainter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Warehouse</title>
+      <link>/tags/warehouse/</link>
+      <pubDate>Tue, 24 Apr 2018 10:11:47 +0800</pubDate>
+      
+      <guid>/tags/warehouse/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

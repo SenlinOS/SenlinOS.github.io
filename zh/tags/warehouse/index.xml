@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Warehouse on SENLINOS ON THE WEB</title>
+    <link>/zh/tags/warehouse/</link>
+    <description>Recent content in Warehouse on SENLINOS ON THE WEB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Apr 2018 10:11:47 +0800</lastBuildDate>
+    
+	<atom:link href="/zh/tags/warehouse/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AzPainter 2.1.2 发布 与 我的Git-仓库</title>
+      <link>/zh/post/azpainter-2.1.2-and-my-git-warehouse/</link>
+      <pubDate>Tue, 24 Apr 2018 10:11:47 +0800</pubDate>
+      
+      <guid>/zh/post/azpainter-2.1.2-and-my-git-warehouse/</guid>
+      <description>AzPainter 2.1.2 for Linux 发布，修正了一些功能问题 &amp;gt; AzP 2.1.2 or &amp;gt; AzP 最新版 你也可以去第三方的 &amp;gt; Symbian9 下载。 我的中文翻译文件也已经更新，现在是 100% 翻译。 但我要把翻译文件邮件</description>
+    </item>
+    
+  </channel>
+</rss>

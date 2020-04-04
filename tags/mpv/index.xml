@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MPV on SENLINOS ON THE WEB</title>
+    <link>/tags/mpv/</link>
+    <description>Recent content in MPV on SENLINOS ON THE WEB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 May 2018 12:45:35 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/mpv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MPV 与 Blender视频编辑插件</title>
+      <link>/post/mpv_and_blender-vse-transform-tool/</link>
+      <pubDate>Thu, 31 May 2018 12:45:35 +0800</pubDate>
+      
+      <guid>/post/mpv_and_blender-vse-transform-tool/</guid>
+      <description>MPV 播放器： 2019-03-26更新：现在使用的是GNOME-MPV，操作是一样的。 在 GNU/Linux 系统中我最喜欢的影音播放器就是 MPV， 其界面非常简洁，</description>
+    </item>
+    
+  </channel>
+</rss>

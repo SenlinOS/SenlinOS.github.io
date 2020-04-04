@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chromium on SENLINOS ON THE WEB</title>
+    <link>/zh/tags/chromium/</link>
+    <description>Recent content in Chromium on SENLINOS ON THE WEB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Jul 2018 15:32:24 +0800</lastBuildDate>
+    
+	<atom:link href="/zh/tags/chromium/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>解决打开Chromium需要密码与USB声卡</title>
+      <link>/zh/post/chromium-keyrings-and-usb-soundcard/</link>
+      <pubDate>Tue, 24 Jul 2018 15:32:24 +0800</pubDate>
+      
+      <guid>/zh/post/chromium-keyrings-and-usb-soundcard/</guid>
+      <description>2019-03-29更新：Firefox与Chromium都使用，各有优点。 火狐中浏览PDF的功能很全面。插件多、安装也方便。 现在Chrom</description>
+    </item>
+    
+  </channel>
+</rss>

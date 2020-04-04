@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brushes on SENLINOS ON THE WEB</title>
+    <link>/zh/tags/brushes/</link>
+    <description>Recent content in Brushes on SENLINOS ON THE WEB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 May 2018 11:35:37 +0800</lastBuildDate>
+    
+	<atom:link href="/zh/tags/brushes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MyPaint-Brushes for GIMP 2.10</title>
+      <link>/zh/post/mypaint-brushes-for-gimp-2.10-by_senlinos/</link>
+      <pubDate>Tue, 01 May 2018 11:35:37 +0800</pubDate>
+      
+      <guid>/zh/post/mypaint-brushes-for-gimp-2.10-by_senlinos/</guid>
+      <description>GIMP 2.10 发布，添加了数不清的新功能。 其中的一个功能是 GIMP 可以使用 MyPaint 的画笔，但我感觉载入的默认画笔的图标与顺序有些混乱。 所以我制作了 36个 MyPaint 画笔，这</description>
+    </item>
+    
+  </channel>
+</rss>
