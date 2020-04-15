@@ -13,10 +13,10 @@
     
     <item>
       <title>L(X)ubuntu中设置 Wacom CTL-671</title>
-      <link>/zh/post/linuxwacom-ctl671-settings/</link>
+      <link>/zh/post/zh/linuxwacom-ctl671-settings/</link>
       <pubDate>Sun, 29 Apr 2018 00:09:52 +0800</pubDate>
       
-      <guid>/zh/post/linuxwacom-ctl671-settings/</guid>
+      <guid>/zh/post/zh/linuxwacom-ctl671-settings/</guid>
       <description>在 Lubuntu 系统中不需要图形界面也可以设置 Wacom板子。 先安装 xserver-xorg-input-wacom，再安装 xinput-calibra</description>
     </item>
     

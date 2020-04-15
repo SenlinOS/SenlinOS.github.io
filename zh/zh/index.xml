@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zhs on SENLINOS ON THE WEB</title>
+    <link>/zh/zh/</link>
+    <description>Recent content in Zhs on SENLINOS ON THE WEB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/zh/zh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>支持我</title>
+      <link>/zh/zh/support-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/zh/support-me/</guid>
+      <description>你可以支持我的项目，非常感谢。 You can support my projects, thank you very much.</description>
+    </item>
+    
+  </channel>
+</rss>
