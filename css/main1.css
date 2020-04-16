@@ -715,7 +715,7 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 }
 
 .card:first-child {
-	border-top: 1px solid #333;
+	#border-top: 1px solid #333;
 }
 
 .card__box {
