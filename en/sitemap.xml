@@ -17,87 +17,27 @@
   </url>
   
   <url>
-    <loc>/en/support-me/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/freesoftware/</loc>
-    <lastmod>2019-11-19T17:51:44+08:00</lastmod>
+    <loc>/support-me/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/freesoftware/"
+                href="/zh/support-me/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/freesoftware/"
+                href="/support-me/"
                 />
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2019-11-19T17:51:44+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/zh/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/"
-                />
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2019-11-19T17:51:44+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
-  </url>
-  
-  <url>
-    <loc>/tags/ubuntu/</loc>
-    <lastmod>2019-11-19T17:51:44+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/zh/tags/ubuntu/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/ubuntu/"
-                />
+    <loc>/post/slos-gimpainter-released/</loc>
+    <lastmod>2020-06-23T20:05:55+08:00</lastmod>
   </url>
   
   <url>
     <loc>/post/gimagereader-and-subtitleeditor/</loc>
     <lastmod>2019-11-19T17:51:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/hardware/</loc>
-    <lastmod>2019-06-16T19:01:55+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/zh/tags/hardware/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/hardware/"
-                />
   </url>
   
   <url>
@@ -121,38 +61,8 @@
   </url>
   
   <url>
-    <loc>/tags/gimp/</loc>
-    <lastmod>2018-11-11T09:25:27+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/zh/tags/gimp/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/gimp/"
-                />
-  </url>
-  
-  <url>
     <loc>/post/gimp-the-focus-automatically-returns-to-the-canvas-window/</loc>
     <lastmod>2018-11-11T09:25:27+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/chromium/</loc>
-    <lastmod>2018-07-24T15:32:24+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/zh/tags/chromium/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/chromium/"
-                />
   </url>
   
   <url>
@@ -161,73 +71,13 @@
   </url>
   
   <url>
-    <loc>/tags/blender/</loc>
-    <lastmod>2018-05-31T12:45:35+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/zh/tags/blender/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/blender/"
-                />
-  </url>
-  
-  <url>
-    <loc>/tags/mpv/</loc>
-    <lastmod>2018-05-31T12:45:35+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/zh/tags/mpv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/mpv/"
-                />
-  </url>
-  
-  <url>
     <loc>/post/mpv_and_blender-vse-transform-tool/</loc>
     <lastmod>2018-05-31T12:45:35+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/mcomix/</loc>
-    <lastmod>2018-05-12T17:54:16+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/zh/tags/mcomix/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/mcomix/"
-                />
-  </url>
-  
-  <url>
     <loc>/post/lubuntu-18.04-blender-mcomix/</loc>
     <lastmod>2018-05-12T17:54:16+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/brushes/</loc>
-    <lastmod>2018-05-01T11:35:37+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/zh/tags/brushes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/brushes/"
-                />
   </url>
   
   <url>
@@ -241,23 +91,39 @@
   </url>
   
   <url>
-    <loc>/tags/wacom/</loc>
-    <lastmod>2018-04-29T00:09:52+08:00</lastmod>
+    <loc>/post/azpainter-and-my-git-warehouse/</loc>
+    <lastmod>2018-04-24T10:11:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/azpainter-for-linux-colorwheel-analysis/</loc>
+    <lastmod>2017-10-18T00:19:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/translated-chinese-simplified-interface-for-azpainter-2-linux/</loc>
+    <lastmod>2017-04-24T21:14:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-06-23T20:05:55+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/wacom/"
+                href="/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/wacom/"
+                href="/"
                 />
   </url>
   
   <url>
     <loc>/tags/azpainter/</loc>
     <lastmod>2018-04-24T10:11:47+08:00</lastmod>
+    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -271,13 +137,185 @@
   </url>
   
   <url>
-    <loc>/post/azpainter-2.1.2-and-my-git-warehouse/</loc>
-    <lastmod>2018-04-24T10:11:47+08:00</lastmod>
+    <loc>/tags/blender/</loc>
+    <lastmod>2018-05-31T12:45:35+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/blender/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/blender/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/brushes/</loc>
+    <lastmod>2020-06-23T20:05:55+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/brushes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/brushes/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/chromium/</loc>
+    <lastmod>2018-07-24T15:32:24+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/chromium/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/chromium/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/freesoftware/</loc>
+    <lastmod>2019-11-19T17:51:44+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/freesoftware/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/freesoftware/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/gimp/</loc>
+    <lastmod>2020-06-23T20:05:55+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/gimp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/gimp/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/hardware/</loc>
+    <lastmod>2019-06-16T19:01:55+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/hardware/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/hardware/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/mcomix/</loc>
+    <lastmod>2018-05-12T17:54:16+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/mcomix/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/mcomix/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/mpv/</loc>
+    <lastmod>2018-05-31T12:45:35+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/mpv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/mpv/"
+                />
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-06-23T20:05:55+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/ubuntu/</loc>
+    <lastmod>2019-11-19T17:51:44+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/ubuntu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/ubuntu/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/wacom/</loc>
+    <lastmod>2018-04-29T00:09:52+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/wacom/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/wacom/"
+                />
   </url>
   
   <url>
     <loc>/tags/warehouse/</loc>
     <lastmod>2018-04-24T10:11:47+08:00</lastmod>
+    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -288,20 +326,6 @@
                 hreflang="en"
                 href="/tags/warehouse/"
                 />
-  </url>
-  
-  <url>
-    <loc>/post/azpainter-2.1.1-for-linux-colorwheel-analysis/</loc>
-    <lastmod>2017-10-18T00:19:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/translated-chinese-simplified-interface-for-azpainter-2-linux/</loc>
-    <lastmod>2017-04-24T21:14:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/</loc>
   </url>
   
 </urlset>

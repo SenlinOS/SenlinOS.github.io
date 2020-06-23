@@ -5,8 +5,8 @@ WACOM CTL-671
 #! /bin/bash
 # Setup xsetwacom script for CTL-671
 # License: CC-0/Public-Domain license
-# author:deevad
-# The parameter modification:SenlinOS
+# author: deevad
+# The parameter modification: SenlinOS
 
 # Tablet definition
 tabletstylus="Wacom Bamboo One M Pen stylus"
@@ -34,4 +34,4 @@ xsetwacom --set "$tabletstylus" Button 3 2
 
 # Left handed stylus
 xsetwacom set 'Wacom Bamboo One M Pen stylus' rotate half
------ 
+-----

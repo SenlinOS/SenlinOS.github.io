@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GIMP on SENLINOS ON THE WEB</title>
+    <title>Gimp on SENLINOS ON THE WEB</title>
     <link>/zh/tags/gimp/</link>
-    <description>Recent content in GIMP on SENLINOS ON THE WEB</description>
+    <description>Recent content in Gimp on SENLINOS ON THE WEB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Nov 2018 09:25:27 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2020 20:05:55 +0800</lastBuildDate>
     
 	<atom:link href="/zh/tags/gimp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>我的新项目 SLOS-GIMPainter 发布</title>
+      <link>/zh/post/zh/slos-gimpainter-released/</link>
+      <pubDate>Tue, 23 Jun 2020 20:05:55 +0800</pubDate>
+      
+      <guid>/zh/post/zh/slos-gimpainter-released/</guid>
+      <description>SLOS-GIMPainter 项目地址：GitHub SLOS-GIMPainter 是为 GIMP 2.10.20 或更高版本的画笔包。 The English description is in the project. GIMP 是功能强大的图像处理自由软件，当然也可以用来绘画，但对于现在的 GIMP 来说没</description>
+    </item>
     
     <item>
       <title>GIMP焦点自动返回到画布窗口</title>
