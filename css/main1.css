@@ -488,7 +488,6 @@ th {
 	margin: 0 0 .3125rem;
 	overflow: auto;
 	background-color: #001c38;
-	height: 42px;
 }
 
 .block {
@@ -646,6 +645,7 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 @media (min-width: 920px) {
 	.header {
 		display: flex;
+		height: 42px;
 	}
 
 	.logo {
