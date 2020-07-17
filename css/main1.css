@@ -365,7 +365,7 @@ main {
 }
 html {
 	overflow: auto;
-	background: url("/img/bgm.png") repeat-x;
+	background: url("/img/bgm.svg") repeat-x;
 	background-color: #f4f4f4;
 }
 
@@ -487,7 +487,8 @@ th {
 .header {
 	margin: 0 0 .3125rem;
 	overflow: auto;
-	background-color: #001c39;
+	background-color: #001c38;
+	height: 42px;
 }
 
 .block {
@@ -541,7 +542,7 @@ th {
 	padding: 0;
 	font-size: 1em;
 	cursor: pointer;
-	background-color: #001c39;
+	background-color: #001c38;
 	border: 0;
 	outline: 0;
 }
