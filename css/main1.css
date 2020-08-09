@@ -1179,9 +1179,21 @@ button .main-nav__btn-box:hover{
   white-space: nowrap;
 }
 
+.bons:hover{
+  border: 1px solid #93b9fd;
+}
+
 .pagination__buttons {
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.imgboa {
+	  border-radius: 2px;
+}
+
+.imgboa:hover {
+	background-color: #fff;
 }
 
 a{outline:none;}
