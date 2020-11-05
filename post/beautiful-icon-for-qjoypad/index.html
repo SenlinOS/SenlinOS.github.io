@@ -82,32 +82,42 @@
 				<div class="entry__content"><p>我一直使用
 <a target="_blank" rel="nofollow" href="/post/modify-delux-t9-keyboard-mapping/">T9键盘</a>
 进行软件操作，长时间保持一种工作姿势，手指会有些疼！
-<br/>所以我想到使用游戏手柄来操作软件，改变手指的操作姿势来缓解疲劳。</p>
+<br />所以我想到使用游戏手柄来操作软件，改变手指的操作姿势来缓解疲劳。</p>
 
 <p>在Xubuntu系统(GNU/Linux)中可以使用 <strong>QjoyPad</strong> 映射游戏手柄到键鼠位。
-<br/>我已经制作了使用QjoyPad的讲解视频：
+<br />我已经制作了使用QjoyPad的讲解视频：
 <a target="_blank" rel="nofollow" href="https://www.bilibili.com/video/av50561866">&gt; 重重点击</a></p>
 
 <p>并且我制作了QjoyPad的美观图标，以
 <a target="_blank" rel="nofollow" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>
 许可发布，大家可以自由使用。
-<br/>图标下载 QJoyPad Icon DL:
+<br />图标下载 QJoyPad Icon DL:
 <a target="_blank" rel="nofollow" href="https://raw.githubusercontent.com/SenlinOS/databox/master/QJoyPad-icon.zip"><strong>GitHub</strong></a>
 or <a target="_blank" rel="nofollow" href="https://share.weiyun.com/5ut0zko"><strong>微云</strong></a></p>
 
 <p><img src="/img/qjoypad-icon.jpg"/></p>
 
 <p><strong>Change the tray icon (更改托盘图标)</strong>
-<br/>Extract the zip package to your home directory (将zip包解压到主目录)
-<br/>Ctrl+Shift+T, Open Terminal (打开终端)</p>
+<br />Extract the zip package to your home directory (将zip包解压到主目录)
+<br />Ctrl+Shift+T, Open Terminal (打开终端)</p>
 
 <ul>
 <li>cd QJoyPad_icon</li>
 <li>sudo cp * /usr/share/pixmaps/qjoypad</li>
 </ul>
 
+<pre><code>2020-11-05更新，Change the tray icon (更改托盘图标)
+QJoyPad 4.3.1 的图标位置发生了改变，所以替换图标的方法也不同：
+
+1. 将zip包中的 gamepad4-24x24.png 解压到用户主目录。
+2. 将 gamepad4-24x24.png 重命名为：qjoypad.png
+3. 在终端中使用命令：sudo cp qjoypad.png /usr/share/icons/hicolor/24x24/apps
+
+这个是白色图标，如果你的系统栏是浅色的，你也可以选择黑色图标，重命名也为：qjoypad.png
+</code></pre>
+
 <p><strong>Change Software Logo (更改软件图标)</strong>
-<br/>QJoyPad-icon_Source: <code>gamepad-logo.svg</code> or <code>gamepad-logo-1.svg</code></p>
+<br />QJoyPad-icon_Source: <code>gamepad-logo.svg</code> or <code>gamepad-logo-1.svg</code></p>
 
 <ul>
 <li>Alt+F2，Open <strong>menulibre</strong></li>
