@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#1b1b1b">
-	<title>解决打开Chromium需要密码与USB声卡 | SENLINOS ON THE WEB</title>
+	<title>在GNU/Linux中修改T9键盘映射 | SENLINOS ON THE WEB</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<link rel="stylesheet" href="/css/float.css">
@@ -76,41 +76,61 @@
 		<div class="single block">
 			<article class="entry">
 	<div class="entry__meta meta mb">
-	<time class="entry__meta-published meta-published" datetime="2018-07-24T15:32:24&#43;08:00">2018-07-24</time>
+	<time class="entry__meta-published meta-published" datetime="2018-11-29T00:38:43&#43;08:00">2018-11-29</time>
 	</div>
-				<center><h1 class="entry__title">解决打开Chromium需要密码与USB声卡</h1></center>
-				<div class="entry__content"><p>2019-03-29更新：Firefox与Chromium都使用，各有优点。
-<br/>火狐中浏览PDF的功能很全面。插件多、安装也方便。
-<br/>现在Chromium中使用的屏蔽广告的插件有些屏蔽不住广告。</p>
+				<center><h1 class="entry__title">在GNU/Linux中修改T9键盘映射</h1></center>
+				<div class="entry__content"><p>我的初代Delux(多彩)T9单手键盘已经使用3年多了，主要作为软件的快捷键使用。</p>
 
-<p><strong>解决打开 Chromium 浏览器需要密码</strong></p>
+<p>现在新T9的型号已经改为T9U，这是我最喜欢的单手键盘版型，双空格、Mode键变换方向键、不需要特殊的驱动，
+而且按键够多～完全够用。
+<br/>手位不动时大拇指就可以操作<code>B . 空格</code>三个按键，这样使操作变得非常灵活。</p>
 
-<p>我使用 Xubuntu 系统时喜欢使用 Chromium 作为默认浏览器。
-<br/>但每次打开 Chromium 浏览器时都提示需要密码！有些烦人。。</p>
+<p><img src="/img/delux-t9.jpg"/></p>
 
-<p>注销系统再次登录后，就会看到 Chromium 在<code>~/.local/share</code>文件夹中生成<code>keyrings</code>文件夹数据。
-先删除 keyrings 文件夹中的文件<code>login.keyring</code>。再打开 Chromium。</p>
+<p>虽然键盘说明书上没写支持<code>GNU/Linux系统</code>，但在GNU/Linux系统中却是最容易使用。
+<br/>现在讲解在GNU/Linux (我的是Xubuntu系统) 中怎样改变T9键盘的键位映射。</p>
 
-<p>这时会看到弹出窗口，提示需要再次输入密码，请不要填写密码，直接点击<code>继续</code>按钮。</p>
+<p><code>F2键</code>是重命名、<code>F5键</code>是刷新，都是常用键，所以<code>F2键</code>与<code>F5键</code>不改变。</p>
 
-<p><img src="/img/chromium-keyrings01.png"/></p>
+<p>需要修改的按键：
+<br/><code>F1</code>改为<code>Enter回车键</code>、<code>F3</code>改为<code>-减号键</code>、<code>F4</code>改为<code>+加号键</code>、<code>F6</code>改为<code>退格键</code></p>
 
-<p>再次会出现弹出窗口，提示确定不需要添加密码吗？直接点击<code>继续</code>按钮。</p>
+<p><img src="/img/delux-t9-fkey.jpg"/></p>
 
-<p><img src="/img/chromium-keyrings02.png"/></p>
+<p><strong>使用快捷键 Ctrl+Alt+T 打开终端，使用命令：</strong>
+<br/><code>sudo vi /usr/share/X11/xkb/symbols/pc</code></p>
 
-<p>这样操作后，每次打开 Chromium 浏览器时就不会再出现烦人的密码窗口了。</p>
+<p>按方向键的下键向下滚动光标，找到<code>key &lt;KIUP&gt; { [ XF86KbdBrightnessUp ] };</code>
+<br/>在这行的下面按<code>i</code>键～进入vi编辑模式：</p>
 
-<hr />
+<ul>
+<li>按Enter键空出一行,复制以下代码，点击终端菜单编辑-&gt;粘贴，将代码贴入</li>
+</ul>
 
-<p><strong>USB 声卡</strong></p>
+<pre><code>key &lt;FK01&gt; { [Return] };
+key &lt;FK03&gt; { [KP_Subtract] };
+key &lt;FK04&gt; { [KP_Add] };
+key &lt;FK06&gt; { [BackSpace] };
+key &lt;FK10&gt; { [F3] };
+</code></pre>
 
-<p>使用 GNU/Linux 体系系统时最怕的问题就是遇到硬件不能驱动，
-<br/>所以每次购买新硬件时都会查看说明是否支持 GNU/Linux 系统。</p>
+<p><mark>2020-01-17更新，因为LibreOffice中需要使用F3键，所以将F10键改为F3键。</mark></p>
 
-<p>这次我买的是 <code>绿联 USB 声卡</code>，直接就可以使用，所以推荐给大家 O(∩_∩)O</p>
+<ul>
+<li>按Enter键空出一行</li>
+</ul>
 
-<p><img src="/img/usb-soundcard.jpg"/></p>
+<p>按<code>Esc</code>键，退出vi编辑模式，按<code>:</code>键（Shift+;）,
+<br />输入<code>wq</code>再按Enter键，保存并退出。</p>
+
+<p><img src="/img/vi-t9.jpg"/></p>
+
+<p>在终端中输入命令：<code>sudo rm -rf /var/lib/xkb/*</code>
+<br />按Enter键后，输入密码执行命令。</p>
+
+<p><code>重启电脑</code>后T9键盘的修改键位映射就可以生效了。</p>
+
+<p>替换了这些键位后，T9操作会变得更加得心应手 :)</p>
 
 <hr />
 
@@ -123,7 +143,6 @@ Blog License:
 				<footer class="entry__footer">
 					
 <div class="entry__tags">
-			<a class="entry__tag btn" href="/zh/tags/chromium/">Chromium</a>
 			<a class="entry__tag btn" href="/zh/tags/hardware/">Hardware</a>
 </div>
 					
@@ -139,16 +158,16 @@ Blog License:
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="/zh/post/zh/gimp-the-focus-automatically-returns-to-the-canvas-window/">
+              <a href="/zh/post/xubuntu-uefi-grub/">
                 <span class="button__icon">&lt;</span>
-                <span class="button__text">GIMP焦点自动返回到画布窗口</span>
+                <span class="button__text">解决安装单系统Xubuntu时grub安装失败</span>
               </a>
             </span>
           
           
             <span class="button next">
-              <a href="/zh/post/zh/mpv_and_blender-vse-transform-tool/">
-                <span class="button__text">MPV 与 Blender视频编辑插件</span>
+              <a href="/zh/post/gimp-the-focus-automatically-returns-to-the-canvas-window/">
+                <span class="button__text">GIMP焦点自动返回到画布窗口</span>
                 <span class="button__icon">></span>
               </a>
             </span>

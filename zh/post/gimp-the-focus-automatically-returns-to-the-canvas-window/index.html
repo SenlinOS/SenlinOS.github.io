@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#1b1b1b">
-	<title>制作了QjoyPad的美观图标 | SENLINOS ON THE WEB</title>
+	<title>GIMP焦点自动返回到画布窗口 | SENLINOS ON THE WEB</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<link rel="stylesheet" href="/css/float.css">
@@ -76,51 +76,52 @@
 		<div class="single block">
 			<article class="entry">
 	<div class="entry__meta meta mb">
-	<time class="entry__meta-published meta-published" datetime="2019-04-27T13:51:57&#43;08:00">2019-04-27</time>
+	<time class="entry__meta-published meta-published" datetime="2018-11-11T09:25:27&#43;08:00">2018-11-11</time>
 	</div>
-				<center><h1 class="entry__title">制作了QjoyPad的美观图标</h1></center>
-				<div class="entry__content"><p>我一直使用
-<a target="_blank" rel="nofollow" href="/post/modify-delux-t9-keyboard-mapping/">T9键盘</a>
-进行软件操作，长时间保持一种工作姿势，手指会有些疼！
-<br />所以我想到使用游戏手柄来操作软件，改变手指的操作姿势来缓解疲劳。</p>
+				<center><h1 class="entry__title">GIMP焦点自动返回到画布窗口</h1></center>
+				<div class="entry__content"><p><mark>2019-10-09更新，原来有四个设置，现在两个设置就可以。</mark></p>
 
-<p>在Xubuntu系统(GNU/Linux)中可以使用 <strong>QjoyPad</strong> 映射游戏手柄到键鼠位。
-<br />我已经制作了使用QjoyPad的讲解视频：
-<a target="_blank" rel="nofollow" href="https://www.bilibili.com/video/av50561866">&gt; 重重点击</a></p>
+<p>直到 GIMP 2.10.x
+单击其他对话框的选项后，画布窗口会失去焦点。
+此时按下空格键相关快捷键将不起作用。</p>
 
-<p>并且我制作了QjoyPad的美观图标，以
-<a target="_blank" rel="nofollow" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>
-许可发布，大家可以自由使用。
-<br />图标下载 QJoyPad Icon DL:
-<a target="_blank" rel="nofollow" href="https://raw.githubusercontent.com/SenlinOS/databox/master/QJoyPad-icon.zip"><strong>GitHub</strong></a>
-or <a target="_blank" rel="nofollow" href="https://share.weiyun.com/5ut0zko"><strong>微云</strong></a></p>
+<p>解决方案：1. 点击画布窗口。2. 按ESC键。
+<br/>这样会造成多余的操作，我想出来的这个方法可以自动将焦点返回到画布窗口 :)</p>
 
-<p><img src="/img/qjoypad-icon.jpg"/></p>
-
-<p><strong>Change the tray icon (更改托盘图标)</strong>
-<br />Extract the zip package to your home directory (将zip包解压到主目录)
-<br />Ctrl+Shift+T, Open Terminal (打开终端)</p>
+<p><strong>必备条件：Xubuntu 系统 或 Xfce 桌面环境</strong></p>
 
 <ul>
-<li>cd QJoyPad_icon</li>
-<li>sudo cp * /usr/share/pixmaps/qjoypad</li>
+<li>如果你使用其他桌面环境，请找到窗口管理的类似功能。</li>
 </ul>
 
-<p><mark>2020-11-05更新，Change the tray icon (更改托盘图标)
-QJoyPad 4.3.1 的图标位置发生了改变，所以替换图标的方法也不同：
-<br />1. 将zip包中的 gamepad4-24x24.png 解压到用户主目录。
-<br />2. 将 gamepad4-24x24.png 重命名为：qjoypad.png
-<br />3. 在终端中使用命令：sudo cp qjoypad.png /usr/share/icons/hicolor/24x24/apps
-<br />这个是白色图标，如果你的系统栏是浅色的，你也可以选择黑色图标，重命名也为：qjoypad.png</mark></p>
-
-<p><strong>Change Software Logo (更改软件图标)</strong>
-<br />QJoyPad-icon_Source: <code>gamepad-logo.svg</code> or <code>gamepad-logo-1.svg</code></p>
+<p><strong>第一步，Xfce 设置管理器</strong></p>
 
 <ul>
-<li>Alt+F2，Open <strong>menulibre</strong></li>
+<li><code>窗口管理器 -&gt; 焦点跟随鼠标</code></li>
+<li><del>面板 -&gt; 窗口按钮 -&gt; 窗口组：总是</del>（不再需要）</li>
 </ul>
 
-<p><img src="/img/menulibre.jpg"/></p>
+<p><img src="/img/xfce-settings.jpg"/></p>
+
+<p><strong>第二步，GIMP 设置</strong></p>
+
+<ul>
+<li><code>窗口 -&gt; 取消单窗口模式</code></li>
+<li><del>编辑 -&gt; 首选项，窗口管理 -&gt; 窗口管理器提示：普通窗口</del>（不再需要）（默认：多用途窗口）</li>
+</ul>
+
+<p><img src="/img/gimp-settings.jpg"/></p>
+
+<p>设置完成后，光标移回画布窗口，焦点将跟随。
+视频演示：
+<a target="_blank" rel="nofollow" href="https://www.bilibili.com/video/av35717157">&gt; 重重点击</a></p>
+
+<hr />
+
+<p><strong>English Notes:</strong> <a href="https://gitlab.gnome.org/GNOME/gimp/-/issues/2472">https://gitlab.gnome.org/GNOME/gimp/-/issues/2472</a></p>
+
+<p><strong>YTB Video:</strong>
+<a target="_blank" rel="nofollow" href="https://youtu.be/dqL1dgGNdWM"><strong>&gt; Click!Click!</strong></a></p>
 
 <hr />
 
@@ -133,7 +134,7 @@ Blog License:
 				<footer class="entry__footer">
 					
 <div class="entry__tags">
-			<a class="entry__tag btn" href="/zh/tags/ubuntu/">Ubuntu</a>
+			<a class="entry__tag btn" href="/zh/tags/gimp/">Gimp</a>
 </div>
 					
 <div class="entry__share share">
@@ -148,16 +149,16 @@ Blog License:
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="/zh/post/zh/spyderx-on-xubuntu/">
+              <a href="/zh/post/modify-delux-t9-keyboard-mapping/">
                 <span class="button__icon">&lt;</span>
-                <span class="button__text">SpyderX on Xubuntu 显示器校色</span>
+                <span class="button__text">在GNU/Linux中修改T9键盘映射</span>
               </a>
             </span>
           
           
             <span class="button next">
-              <a href="/zh/post/zh/xubuntu-uefi-grub/">
-                <span class="button__text">解决安装单系统Xubuntu时grub安装失败</span>
+              <a href="/zh/post/chromium-keyrings-and-usb-soundcard/">
+                <span class="button__text">解决打开Chromium需要密码与USB声卡</span>
                 <span class="button__icon">></span>
               </a>
             </span>

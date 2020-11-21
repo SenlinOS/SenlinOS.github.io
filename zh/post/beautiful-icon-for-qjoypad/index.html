@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#1b1b1b">
-	<title>我的新项目 SLOS-GIMPainter 发布 | SENLINOS ON THE WEB</title>
+	<title>制作了QjoyPad的美观图标 | SENLINOS ON THE WEB</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<link rel="stylesheet" href="/css/float.css">
@@ -76,102 +76,51 @@
 		<div class="single block">
 			<article class="entry">
 	<div class="entry__meta meta mb">
-	<time class="entry__meta-published meta-published" datetime="2020-06-23T20:05:55&#43;08:00">2020-06-23</time>
+	<time class="entry__meta-published meta-published" datetime="2019-04-27T13:51:57&#43;08:00">2019-04-27</time>
 	</div>
-				<center><h1 class="entry__title">我的新项目 SLOS-GIMPainter 发布</h1></center>
-				<div class="entry__content">
+				<center><h1 class="entry__title">制作了QjoyPad的美观图标</h1></center>
+				<div class="entry__content"><p>我一直使用
+<a target="_blank" rel="nofollow" href="/post/modify-delux-t9-keyboard-mapping/">T9键盘</a>
+进行软件操作，长时间保持一种工作姿势，手指会有些疼！
+<br />所以我想到使用游戏手柄来操作软件，改变手指的操作姿势来缓解疲劳。</p>
 
-<p><strong>SLOS-GIMPainter 项目地址：<a target="_blank" rel="noopener noreferrer" href="https://github.com/SenlinOS/SLOS-GIMPainter">GitHub</a></strong>
-<br />SLOS-GIMPainter 是为 GIMP 2.10.20 或更高版本的画笔包。
-<br /><code>The English description is in the project.</code></p>
+<p>在Xubuntu系统(GNU/Linux)中可以使用 <strong>QjoyPad</strong> 映射游戏手柄到键鼠位。
+<br />我已经制作了使用QjoyPad的讲解视频：
+<a target="_blank" rel="nofollow" href="https://www.bilibili.com/video/av50561866">&gt; 重重点击</a></p>
 
-<p><img src="/img/SLOS-GIMPainter-By-SenlinOS.jpg" alt="img" /></p>
+<p>并且我制作了QjoyPad的美观图标，以
+<a target="_blank" rel="nofollow" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>
+许可发布，大家可以自由使用。
+<br />图标下载 QJoyPad Icon DL:
+<a target="_blank" rel="nofollow" href="https://raw.githubusercontent.com/SenlinOS/databox/master/QJoyPad-icon.zip"><strong>GitHub</strong></a>
+or <a target="_blank" rel="nofollow" href="https://share.weiyun.com/5ut0zko"><strong>微云</strong></a></p>
 
-<p>GIMP 是功能强大的图像处理自由软件，当然也可以用来绘画，但对于现在的 GIMP 来说没有一套专业的画笔。
-<br />以前的画笔预设已经不适用现在的 GIMP 版本，如果想用 GIMP 绘画的用户必须自己去制作画笔，从而造成不便与浪费时间。</p>
+<p><img src="/img/qjoypad-icon.jpg"/></p>
 
-<p>因为我决定使用 GIMP 作为主要绘画软件，所以我从 2.10.12 开始制作画笔，到 2.10.14 制作完毕，
-<br />但是以前这些 GIMP 版本在工具选项都存在 Bugs，所以我没有将制作完成的画笔发布。</p>
-
-<p>GIMP 2.10.20 修复了 Bugs，我在这段时间也对 SLOS-GIMPainter 增加了预设与改进效果。</p>
-
-<p><strong>注意：</strong>以前的画笔形状文件也可以继续使用：.VBR、.GBR、.GIH</p>
-
-<ul>
-<li>在GIMP中创建丰富效果的画笔需要三个设置的组合：
-<br /><strong>笔刷 (画笔形状) + 动态 + 工具预设</strong></li>
-</ul>
-
-<hr />
-
-<h5 id="项目名称">项目名称</h5>
-
-<p>这个项目的名称 = <code>我的名字缩写</code> + <code>GIMP</code> + <code>Painter</code></p>
+<p><strong>Change the tray icon (更改托盘图标)</strong>
+<br />Extract the zip package to your home directory (将zip包解压到主目录)
+<br />Ctrl+Shift+T, Open Terminal (打开终端)</p>
 
 <ul>
-<li><strong>Painter</strong> 这个词更能说明项目的功能，GIMP 与 Painter 中的 <code>p</code> 相邻，所以将这两个 <code>p</code> 合并。</li>
+<li>cd QJoyPad_icon</li>
+<li>sudo cp * /usr/share/pixmaps/qjoypad</li>
 </ul>
 
-<p>项目名称就是 <strong>SLOS-GIMPainter</strong></p>
+<p><mark>2020-11-05更新，Change the tray icon (更改托盘图标)
+QJoyPad 4.3.1 的图标位置发生了改变，所以替换图标的方法也不同：
+<br />1. 将zip包中的 gamepad4-24x24.png 解压到用户主目录。
+<br />2. 将 gamepad4-24x24.png 重命名为：qjoypad.png
+<br />3. 在终端中使用命令：sudo cp qjoypad.png /usr/share/icons/hicolor/24x24/apps
+<br />这个是白色图标，如果你的系统栏是浅色的，你也可以选择黑色图标，重命名也为：qjoypad.png</mark></p>
 
-<hr />
-
-<h5 id="特点">特点</h5>
+<p><strong>Change Software Logo (更改软件图标)</strong>
+<br />QJoyPad-icon_Source: <code>gamepad-logo.svg</code> or <code>gamepad-logo-1.svg</code></p>
 
 <ul>
-<li>画笔显示为图标。(适合不同语言的用户)</li>
-<li>排列有序，分类清晰。</li>
-<li>选择合适的画笔并替换笔刷形状以获得新的效果。(避免总是创建新画笔)</li>
-<li>项目中包含的SVG文件(路径)可以与画笔一起使用来创建效果线。</li>
+<li>Alt+F2，Open <strong>menulibre</strong></li>
 </ul>
 
-<hr />
-
-<h5 id="安装方法">安装方法</h5>
-
-<p><strong>如何下载：</strong> 点击绿色的 <strong>Clone</strong> 按钮，然后点击 <strong>Download ZIP</strong>。</p>
-
-<ul>
-<li>编辑 -&gt; 首选项 -&gt;(文件夹 -&gt; 笔刷)、(文件夹 -&gt; 动态)、(文件夹 -&gt; 工具预设)</li>
-
-<li><p>点击 [添加新文件夹] 按钮，分别打开 SLOS-GIMPainter 文件夹中对应的目录：</p>
-
-<p>示例位置： <code>□ /.../SLOS-GIMPainter/brushes</code></p>
-
-<p>示例位置： <code>□ /.../SLOS-GIMPainter/dynamics</code></p>
-
-<p>示例位置： <code>□ /.../SLOS-GIMPainter/tool-presets</code>
-<p></p></li>
-
-<li><p>重启 GIMP</p></li>
-</ul>
-
-<p><strong>注意：</strong>不要勾选前面的复选框，避免更改 SLOS-GIMPainter 的默认设置。</p>
-
-<hr />
-
-<h5 id="显示对话框">显示对话框</h5>
-
-<p>打开 窗口菜单：可停靠对话框 -&gt; 工具预设，就可以看到 SLOS-GIMPainter</p>
-
-<ul>
-<li>点击工具预设对话框右上的小三角形按钮，点击<code>以网格方式查看</code></li>
-<li>点击工具预设对话框右上的小三角形按钮，<code>预览大小</code>，选择<code>较大</code></li>
-<li>选择工具预设对话框上方的 <code>SLOS</code> 标签，可以隐藏 GIMP 的内置预设。</li>
-</ul>
-
-<hr />
-
-<h5 id="许可证">许可证</h5>
-
-<p>本项目采用 MIT 许可证。有关更多信息，请参见项目中的 LICENSE 文件。</p>
-
-<hr />
-
-<p><strong>关于详细的讲解，请看我的视频演示：</strong>
-<a href="https://space.bilibili.com/14824534/channel/detail?cid=135785">在B站的演示视频合集</a>。</p>
-
-<p>对于线艺术，请查看文字说明：<a target="_blank" rel="noopener noreferrer" href="/databox/For-Line-Art_SLOS-GIMPainter.txt">这里</a>。</p>
+<p><img src="/img/menulibre.jpg"/></p>
 
 <hr />
 
@@ -184,8 +133,7 @@ Blog License:
 				<footer class="entry__footer">
 					
 <div class="entry__tags">
-			<a class="entry__tag btn" href="/zh/tags/brushes/">Brushes</a>
-			<a class="entry__tag btn" href="/zh/tags/gimp/">Gimp</a>
+			<a class="entry__tag btn" href="/zh/tags/ubuntu/">Ubuntu</a>
 </div>
 					
 <div class="entry__share share">
@@ -199,10 +147,17 @@ Blog License:
       <div class="pagination">
         <div class="pagination__buttons">
           
+            <span class="button previous">
+              <a href="/zh/post/spyderx-on-xubuntu/">
+                <span class="button__icon">&lt;</span>
+                <span class="button__text">SpyderX on Xubuntu 显示器校色</span>
+              </a>
+            </span>
+          
           
             <span class="button next">
-              <a href="/zh/post/zh/gimagereader-and-subtitleeditor/">
-                <span class="button__text">提取图片上的文字 &amp; 新的字幕编辑器</span>
+              <a href="/zh/post/xubuntu-uefi-grub/">
+                <span class="button__text">解决安装单系统Xubuntu时grub安装失败</span>
                 <span class="button__icon">></span>
               </a>
             </span>

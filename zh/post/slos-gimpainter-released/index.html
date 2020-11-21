@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#1b1b1b">
-	<title>MPV 与 Blender视频编辑插件 | SENLINOS ON THE WEB</title>
+	<title>我的新项目 SLOS-GIMPainter 发布 | SENLINOS ON THE WEB</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<link rel="stylesheet" href="/css/float.css">
@@ -76,176 +76,102 @@
 		<div class="single block">
 			<article class="entry">
 	<div class="entry__meta meta mb">
-	<time class="entry__meta-published meta-published" datetime="2018-05-31T12:45:35&#43;08:00">2018-05-31</time>
+	<time class="entry__meta-published meta-published" datetime="2020-06-23T20:05:55&#43;08:00">2020-06-23</time>
 	</div>
-				<center><h1 class="entry__title">MPV 与 Blender视频编辑插件</h1></center>
-				<div class="entry__content"><p><strong>MPV 播放器：</strong></p>
+				<center><h1 class="entry__title">我的新项目 SLOS-GIMPainter 发布</h1></center>
+				<div class="entry__content">
 
-<p>2019-03-26更新：现在使用的是GNOME-MPV，操作是一样的。</p>
+<p><strong>SLOS-GIMPainter 项目地址：<a target="_blank" rel="noopener noreferrer" href="https://github.com/SenlinOS/SLOS-GIMPainter">GitHub</a></strong>
+<br />SLOS-GIMPainter 是为 GIMP 2.10.20 或更高版本的画笔包。
+<br /><code>The English description is in the project.</code></p>
 
-<p>在 GNU/Linux 系统中我最喜欢的影音播放器就是 MPV，
-其界面非常简洁，在窗口内拖动就可以移动窗口
-（鼠标放在窗口上侧不显示进度条，鼠标放在窗口下侧会显示进度条）</p>
+<p><img src="/img/SLOS-GIMPainter-By-SenlinOS.jpg" alt="img" /></p>
 
-<p>MPV 播放器可以在<code>进度条</code>上进行一些操作，
-与其他播放器的常用快捷键一样，<code>空格键</code>是 <code>播放</code> 与 <code>暂停</code>，
-其他的大部分操作都是用键盘完成，下面就是一些常用的快捷键：</p>
+<p>GIMP 是功能强大的图像处理自由软件，当然也可以用来绘画，但对于现在的 GIMP 来说没有一套专业的画笔。
+<br />以前的画笔预设已经不适用现在的 GIMP 版本，如果想用 GIMP 绘画的用户必须自己去制作画笔，从而造成不便与浪费时间。</p>
 
-<table>
-<thead>
-<tr>
-<th align="left">功能</th>
-<th align="left">快捷键</th>
-</tr>
-</thead>
+<p>因为我决定使用 GIMP 作为主要绘画软件，所以我从 2.10.12 开始制作画笔，到 2.10.14 制作完毕，
+<br />但是以前这些 GIMP 版本在工具选项都存在 Bugs，所以我没有将制作完成的画笔发布。</p>
 
-<tbody>
-<tr>
-<td align="left">截图</td>
-<td align="left">S</td>
-</tr>
+<p>GIMP 2.10.20 修复了 Bugs，我在这段时间也对 SLOS-GIMPainter 增加了预设与改进效果。</p>
 
-<tr>
-<td align="left">静音</td>
-<td align="left">M，再一次复原</td>
-</tr>
+<p><strong>注意：</strong>以前的画笔形状文件也可以继续使用：.VBR、.GBR、.GIH</p>
 
-<tr>
-<td align="left">减音量 / 加音量</td>
-<td align="left">9 与 0</td>
-</tr>
-
-<tr>
-<td align="left">循环播放</td>
-<td align="left">Shift + L</td>
-</tr>
-
-<tr>
-<td align="left">减倍速 / 加倍速</td>
-<td align="left">[ 与 ]</td>
-</tr>
-
-<tr>
-<td align="left">复原倍速</td>
-<td align="left">Backspace</td>
-</tr>
-
-<tr>
-<td align="left">播放下一个</td>
-<td align="left">Enter ，多个文件时</td>
-</tr>
-
-<tr>
-<td align="left">播放上一个 / 下一个</td>
-<td align="left">&lt; 与 &gt; ，多个文件时</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>在GIMP中创建丰富效果的画笔需要三个设置的组合：
+<br /><strong>笔刷 (画笔形状) + 动态 + 工具预设</strong></li>
+</ul>
 
 <hr />
 
-<p><strong>Blender 视频编辑插件：</strong>
-<br/>众所周知 Blender 是功能强大的自由开源 3D 软件。
-不过它还能编辑视频，可以满足个人日常使用。
-在窗口样式中选择<code>Video Editing</code>，在<code>属性</code>面板中设置视频渲染格式。</p>
+<h5 id="项目名称">项目名称</h5>
 
-<p><img src="/img/video-editing.png"/></p>
+<p>这个项目的名称 = <code>我的名字缩写</code> + <code>GIMP</code> + <code>Painter</code></p>
 
-<p><code>VSE Transform Tools</code>插件可以增强 Blender(到2.79) 的视频编辑功能。
-<br/>插件可以在作者的仓库下载：
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/kgeogeo/VSE_Transform_Tools">&gt;重重点击</a></p>
+<ul>
+<li><strong>Painter</strong> 这个词更能说明项目的功能，GIMP 与 Painter 中的 <code>p</code> 相邻，所以将这两个 <code>p</code> 合并。</li>
+</ul>
 
-<p><strong>2019-10-17更新</strong>，由 Daniel Oakey 重写了适合 <code>Blender 2.80+</code> 的 VSE Transform Tools 插件：
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/doakey3/VSE_Transform_Tools">&gt;重重点击</a></p>
+<p>项目名称就是 <strong>SLOS-GIMPainter</strong></p>
 
-<p>下面是插件在影片窗口中操作的快捷键：</p>
+<hr />
 
-<table>
-<thead>
-<tr>
-<th align="left">功能</th>
-<th align="left">快捷键</th>
-</tr>
-</thead>
+<h5 id="特点">特点</h5>
 
-<tbody>
-<tr>
-<td align="left">向片段添加一个变形效果</td>
-<td align="left">T</td>
-</tr>
+<ul>
+<li>画笔显示为图标。(适合不同语言的用户)</li>
+<li>排列有序，分类清晰。</li>
+<li>选择合适的画笔并替换笔刷形状以获得新的效果。(避免总是创建新画笔)</li>
+<li>项目中包含的SVG文件(路径)可以与画笔一起使用来创建效果线。</li>
+</ul>
 
-<tr>
-<td align="left">选择或取消所有片段</td>
-<td align="left">A</td>
-</tr>
+<hr />
 
-<tr>
-<td align="left">片段的不透明度</td>
-<td align="left">Q</td>
-</tr>
+<h5 id="安装方法">安装方法</h5>
 
-<tr>
-<td align="left">恢复原始不透明度</td>
-<td align="left">ALT + Q</td>
-</tr>
+<p><strong>如何下载：</strong> 点击绿色的 <strong>Clone</strong> 按钮，然后点击 <strong>Download ZIP</strong>。</p>
 
-<tr>
-<td align="left">显示剪裁功能</td>
-<td align="left">C，再次 C键 不显示</td>
-</tr>
+<ul>
+<li>编辑 -&gt; 首选项 -&gt;(文件夹 -&gt; 笔刷)、(文件夹 -&gt; 动态)、(文件夹 -&gt; 工具预设)</li>
 
-<tr>
-<td align="left">复原剪裁</td>
-<td align="left">ALT + C</td>
-</tr>
-</tbody>
-</table>
+<li><p>点击 [添加新文件夹] 按钮，分别打开 SLOS-GIMPainter 文件夹中对应的目录：</p>
 
-<p>（拖动对角圆点进行剪裁，+号移动剪裁位置）</p>
+<p>示例位置： <code>□ /.../SLOS-GIMPainter/brushes</code></p>
 
-<p>其他操作与 Blender 的快捷键相同：</p>
+<p>示例位置： <code>□ /.../SLOS-GIMPainter/dynamics</code></p>
 
-<table>
-<thead>
-<tr>
-<th align="left">快捷键 与 功能</th>
-</tr>
-</thead>
+<p>示例位置： <code>□ /.../SLOS-GIMPainter/tool-presets</code>
+<p></p></li>
 
-<tbody>
-<tr>
-<td align="left">G, R, S 移动、旋转、缩放影片元素</td>
-</tr>
+<li><p>重启 GIMP</p></li>
+</ul>
 
-<tr>
-<td align="left">ALT + G 或 R 或 S 恢复原始状态</td>
-</tr>
+<p><strong>注意：</strong>不要勾选前面的复选框，避免更改 SLOS-GIMPainter 的默认设置。</p>
 
-<tr>
-<td align="left">CTRL + G 或 R 或 S 倍数值</td>
-</tr>
+<hr />
 
-<tr>
-<td align="left">SHIFT + G 或 R 或 S 改变这个值，但速度较慢</td>
-</tr>
+<h5 id="显示对话框">显示对话框</h5>
 
-<tr>
-<td align="left">X or Y 约束一个轴，只限移动和缩放</td>
-</tr>
+<p>打开 窗口菜单：可停靠对话框 -&gt; 工具预设，就可以看到 SLOS-GIMPainter</p>
 
-<tr>
-<td align="left">MMB 中键显示轴，并约束轴</td>
-</tr>
+<ul>
+<li>点击工具预设对话框右上的小三角形按钮，点击<code>以网格方式查看</code></li>
+<li>点击工具预设对话框右上的小三角形按钮，<code>预览大小</code>，选择<code>较大</code></li>
+<li>选择工具预设对话框上方的 <code>SLOS</code> 标签，可以隐藏 GIMP 的内置预设。</li>
+</ul>
 
-<tr>
-<td align="left">[0…9] [.][-] 用数字键盘改变数值</td>
-</tr>
+<hr />
 
-<tr>
-<td align="left">I 在影片窗口中显示关键帧菜单</td>
-</tr>
-</tbody>
-</table>
+<h5 id="许可证">许可证</h5>
+
+<p>本项目采用 MIT 许可证。有关更多信息，请参见项目中的 LICENSE 文件。</p>
+
+<hr />
+
+<p><strong>关于详细的讲解，请看我的视频演示：</strong>
+<a href="https://space.bilibili.com/14824534/channel/detail?cid=135785">在B站的演示视频合集</a>。</p>
+
+<p>对于线艺术，请查看文字说明：<a target="_blank" rel="noopener noreferrer" href="/databox/For-Line-Art_SLOS-GIMPainter.txt">这里</a>。</p>
 
 <hr />
 
@@ -258,8 +184,8 @@ Blog License:
 				<footer class="entry__footer">
 					
 <div class="entry__tags">
-			<a class="entry__tag btn" href="/zh/tags/mpv/">Mpv</a>
-			<a class="entry__tag btn" href="/zh/tags/blender/">Blender</a>
+			<a class="entry__tag btn" href="/zh/tags/brushes/">Brushes</a>
+			<a class="entry__tag btn" href="/zh/tags/gimp/">Gimp</a>
 </div>
 					
 <div class="entry__share share">
@@ -273,17 +199,10 @@ Blog License:
       <div class="pagination">
         <div class="pagination__buttons">
           
-            <span class="button previous">
-              <a href="/zh/post/zh/chromium-keyrings-and-usb-soundcard/">
-                <span class="button__icon">&lt;</span>
-                <span class="button__text">解决打开Chromium需要密码与USB声卡</span>
-              </a>
-            </span>
-          
           
             <span class="button next">
-              <a href="/zh/post/zh/lubuntu-18.04-blender-mcomix/">
-                <span class="button__text">X(L)ubuntu-18.04、Blender、Mcomix</span>
+              <a href="/zh/post/gimagereader-and-subtitleeditor/">
+                <span class="button__text">提取图片上的文字 &amp; 新的字幕编辑器</span>
                 <span class="button__icon">></span>
               </a>
             </span>

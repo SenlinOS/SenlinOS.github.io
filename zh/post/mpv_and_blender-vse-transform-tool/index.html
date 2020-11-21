@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#1b1b1b">
-	<title>AzPainter 2.1.1 for Linux 的色环面板解析 | SENLINOS ON THE WEB</title>
+	<title>MPV 与 Blender视频编辑插件 | SENLINOS ON THE WEB</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<link rel="stylesheet" href="/css/float.css">
@@ -76,50 +76,176 @@
 		<div class="single block">
 			<article class="entry">
 	<div class="entry__meta meta mb">
-	<time class="entry__meta-published meta-published" datetime="2017-10-18T00:19:44&#43;08:00">2017-10-18</time>
+	<time class="entry__meta-published meta-published" datetime="2018-05-31T12:45:35&#43;08:00">2018-05-31</time>
 	</div>
-				<center><h1 class="entry__title">AzPainter 2.1.1 for Linux 的色环面板解析</h1></center>
-				<div class="entry__content"><p>AzPainter 2.1.1 for Linux 加入了 HLS 颜色滑片，它与色环面板可以密切配合！
-HLS 滑片的颜色走势符合绘画的色彩原理，可以使用它来观察色环面板。</p>
+				<center><h1 class="entry__title">MPV 与 Blender视频编辑插件</h1></center>
+				<div class="entry__content"><p><strong>MPV 播放器：</strong></p>
 
-<p><strong>AzPainter 色环上的冷色与暖色：</strong></p>
+<p>2019-03-26更新：现在使用的是GNOME-MPV，操作是一样的。</p>
 
-<p><img src="/img/cool-and-warm.png"/>
-<br/>如图所示的颜色位置，色环分成两部分。当然具体颜色的冷暖也得看是什么颜色放在一起做对比。
-可以看到分界线是从三角形的黑色端点到对边的垂直线，非常容易找到。</p>
+<p>在 GNU/Linux 系统中我最喜欢的影音播放器就是 MPV，
+其界面非常简洁，在窗口内拖动就可以移动窗口
+（鼠标放在窗口上侧不显示进度条，鼠标放在窗口下侧会显示进度条）</p>
 
-<p><strong>AzPainter 色环上的亮色与暗色：</strong></p>
+<p>MPV 播放器可以在<code>进度条</code>上进行一些操作，
+与其他播放器的常用快捷键一样，<code>空格键</code>是 <code>播放</code> 与 <code>暂停</code>，
+其他的大部分操作都是用键盘完成，下面就是一些常用的快捷键：</p>
 
-<p><img src="/img/dark-and-light.png"/>
-<br/>同样是色环颜色被分成亮暗两部分，可以凭感觉体会下。</p>
+<table>
+<thead>
+<tr>
+<th align="left">功能</th>
+<th align="left">快捷键</th>
+</tr>
+</thead>
 
-<p><strong>AzPainter 2.1.1 for Linux 的色环面板中的明度与饱和度的拾色有两个选择：</strong>
-<br/>HSV 三角形 与 HSV 正方形，我更喜欢 HSV 三角形，因为三角形中的颜色走势更有规律。</p>
+<tbody>
+<tr>
+<td align="left">截图</td>
+<td align="left">S</td>
+</tr>
 
-<p><img src="/img/color-box.png"/></p>
+<tr>
+<td align="left">静音</td>
+<td align="left">M，再一次复原</td>
+</tr>
 
-<p><strong>可以拖动 HLS 颜色滑片来观察 HSV 三角形 与 HSV 正方形 中的颜色规律。</strong>
-<br/>HLS 颜色滑片：H = 色相、L = 明度 、S = 饱和度</p>
+<tr>
+<td align="left">减音量 / 加音量</td>
+<td align="left">9 与 0</td>
+</tr>
 
-<p><img src="/img/HLS-sliders.png"/></p>
+<tr>
+<td align="left">循环播放</td>
+<td align="left">Shift + L</td>
+</tr>
 
-<p><strong>明度的走势：</strong></p>
+<tr>
+<td align="left">减倍速 / 加倍速</td>
+<td align="left">[ 与 ]</td>
+</tr>
 
-<p><img src="/img/darkness-to-lightness.png"/>
-<br/>从暗到亮，饱和度不变。
-三角形中颜色由暗点以直线行进，到三角形水平中线后又以直线行进到亮点，走势非常有规律。
-正方形中的明度走势也可以说有些规律，但没三角形中的明度走势好掌握。</p>
+<tr>
+<td align="left">复原倍速</td>
+<td align="left">Backspace</td>
+</tr>
 
-<p><strong>饱和度的走势：</strong></p>
+<tr>
+<td align="left">播放下一个</td>
+<td align="left">Enter ，多个文件时</td>
+</tr>
 
-<p><img src="/img/saturation-trend.png"/>
-<br/>图中箭头方向，饱和度逐渐变大。明度保持不变。
-三角形中的饱和度走势是水平移动，非常有规律～便于操作。
-正方形中的饱和度走势可以说很难掌握规律！</p>
+<tr>
+<td align="left">播放上一个 / 下一个</td>
+<td align="left">&lt; 与 &gt; ，多个文件时</td>
+</tr>
+</tbody>
+</table>
 
-<p>这就是我喜欢使用 HSV 三角形 选择颜色的原因！</p>
+<hr />
 
-<p>在这里还是要感谢 AzPainter for Linux 的作者 Azel 实现了这个好用的色环颜色面板！</p>
+<p><strong>Blender 视频编辑插件：</strong>
+<br/>众所周知 Blender 是功能强大的自由开源 3D 软件。
+不过它还能编辑视频，可以满足个人日常使用。
+在窗口样式中选择<code>Video Editing</code>，在<code>属性</code>面板中设置视频渲染格式。</p>
+
+<p><img src="/img/video-editing.png"/></p>
+
+<p><code>VSE Transform Tools</code>插件可以增强 Blender(到2.79) 的视频编辑功能。
+<br/>插件可以在作者的仓库下载：
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/kgeogeo/VSE_Transform_Tools">&gt;重重点击</a></p>
+
+<p><strong>2019-10-17更新</strong>，由 Daniel Oakey 重写了适合 <code>Blender 2.80+</code> 的 VSE Transform Tools 插件：
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/doakey3/VSE_Transform_Tools">&gt;重重点击</a></p>
+
+<p>下面是插件在影片窗口中操作的快捷键：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">功能</th>
+<th align="left">快捷键</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">向片段添加一个变形效果</td>
+<td align="left">T</td>
+</tr>
+
+<tr>
+<td align="left">选择或取消所有片段</td>
+<td align="left">A</td>
+</tr>
+
+<tr>
+<td align="left">片段的不透明度</td>
+<td align="left">Q</td>
+</tr>
+
+<tr>
+<td align="left">恢复原始不透明度</td>
+<td align="left">ALT + Q</td>
+</tr>
+
+<tr>
+<td align="left">显示剪裁功能</td>
+<td align="left">C，再次 C键 不显示</td>
+</tr>
+
+<tr>
+<td align="left">复原剪裁</td>
+<td align="left">ALT + C</td>
+</tr>
+</tbody>
+</table>
+
+<p>（拖动对角圆点进行剪裁，+号移动剪裁位置）</p>
+
+<p>其他操作与 Blender 的快捷键相同：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">快捷键 与 功能</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">G, R, S 移动、旋转、缩放影片元素</td>
+</tr>
+
+<tr>
+<td align="left">ALT + G 或 R 或 S 恢复原始状态</td>
+</tr>
+
+<tr>
+<td align="left">CTRL + G 或 R 或 S 倍数值</td>
+</tr>
+
+<tr>
+<td align="left">SHIFT + G 或 R 或 S 改变这个值，但速度较慢</td>
+</tr>
+
+<tr>
+<td align="left">X or Y 约束一个轴，只限移动和缩放</td>
+</tr>
+
+<tr>
+<td align="left">MMB 中键显示轴，并约束轴</td>
+</tr>
+
+<tr>
+<td align="left">[0…9] [.][-] 用数字键盘改变数值</td>
+</tr>
+
+<tr>
+<td align="left">I 在影片窗口中显示关键帧菜单</td>
+</tr>
+</tbody>
+</table>
 
 <hr />
 
@@ -132,7 +258,8 @@ Blog License:
 				<footer class="entry__footer">
 					
 <div class="entry__tags">
-			<a class="entry__tag btn" href="/zh/tags/azpainter/">Azpainter</a>
+			<a class="entry__tag btn" href="/zh/tags/mpv/">Mpv</a>
+			<a class="entry__tag btn" href="/zh/tags/blender/">Blender</a>
 </div>
 					
 <div class="entry__share share">
@@ -147,16 +274,16 @@ Blog License:
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="/zh/post/zh/azpainter-and-my-git-warehouse/">
+              <a href="/zh/post/chromium-keyrings-and-usb-soundcard/">
                 <span class="button__icon">&lt;</span>
-                <span class="button__text">AzPainter 新版发布 与 我的Git-仓库</span>
+                <span class="button__text">解决打开Chromium需要密码与USB声卡</span>
               </a>
             </span>
           
           
             <span class="button next">
-              <a href="/zh/post/zh/translated-chinese-simplified-interface-for-azpainter-2-linux/">
-                <span class="button__text">翻译了 AzPainter 2 for Linux 的简体中文界面</span>
+              <a href="/zh/post/lubuntu-18.04-blender-mcomix/">
+                <span class="button__text">X(L)ubuntu-18.04、Blender、Mcomix</span>
                 <span class="button__icon">></span>
               </a>
             </span>

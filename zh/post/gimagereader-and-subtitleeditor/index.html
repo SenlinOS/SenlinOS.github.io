@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#1b1b1b">
-	<title>SpyderX on Xubuntu 显示器校色 | SENLINOS ON THE WEB</title>
+	<title>提取图片上的文字 &amp; 新的字幕编辑器 | SENLINOS ON THE WEB</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<link rel="stylesheet" href="/css/float.css">
@@ -76,124 +76,44 @@
 		<div class="single block">
 			<article class="entry">
 	<div class="entry__meta meta mb">
-	<time class="entry__meta-published meta-published" datetime="2019-06-16T19:01:55&#43;08:00">2019-06-16</time>
+	<time class="entry__meta-published meta-published" datetime="2019-11-19T17:51:44&#43;08:00">2019-11-19</time>
 	</div>
-				<center><h1 class="entry__title">SpyderX on Xubuntu 显示器校色</h1></center>
-				<div class="entry__content"><p>前段时间购买了 SpyderX Pro 显示器校色仪。
-<br/>一直在摸索怎样使用，毕竟在 GNU/Linux 系统中这方面的资料很少！</p>
+				<center><h1 class="entry__title">提取图片上的文字 &amp; 新的字幕编辑器</h1></center>
+				<div class="entry__content"><h5>提取图片上的文字：</h5>
 
-<p>在 Xubuntu 系统的软件中心中就有校色软件 DisplayCAL，但这个软件更新非常频繁，
-<br/>所以建议直接去官网下载最新版：<a href="https://displaycal.net">https://displaycal.net</a></p>
+<p><mark>2020-06-11 更新，百度在线翻译已经支持粘贴图片进行翻译。</mark></p>
+
+<p>在看图片类的复杂外文时，想找个在线图片翻译网站～但没找到！
+<br />看一些帖子说手机安装些翻译应用就可以了！但我感觉不方便～我也不想安装多余的app。</p>
+
+<p>所以我在 Xubuntu (GNU/Linux) 系统中使用 gImagereader 提取图片文字，然后再使用在线翻译。
+<br />在新立得(Synaptic) 中搜：<code>tesseract-ocr</code>，就会看到需要的所有程序，详情看图示：</p>
 
 <ul>
-<li><p>DisplayCAL 是基于 ArgyllCMS 来校准颜色，首先下载 (我下载的是  64 bit 版)：
-<a target="_blank" rel="nofollow" href="https://www.argyllcms.com/downloadlinux.html">&gt; ArgyllCMS for Linux</a></p></li>
-
-<li><p>来到网页的 Get DisplayCAL 项，下载对应 Linux 版本，我下载的是 x86_64 Ubuntu 18.04 版。</p></li>
+<li><strong>安装 gimagereader 与 tesseract-ocr 或其他语言支持 (英文支持默认安装)：</strong></li>
 </ul>
 
-<p><img src="/img/displaycal01.jpg"/></p>
+<p><img src="/img/2019-11-19-13-41-17.jpg"/></p>
+
+<ul>
+<li><strong>在系统图形菜单中启动 gImagereader 提取图片中的文字：</strong></li>
+</ul>
+
+<p><img src="/img/2019-11-19-14-38-40.jpg"/></p>
 
 <hr />
 
-<p><strong>安装 DisplayCAL 与 设置 ArgyllCMS：</strong></p>
+<h5>新的字幕编辑器：</h5>
 
-<ul>
-<li><p>双击 displaycal_3.8.x.x-x_amd64.deb 就可以在软件中心中打开，点击安装按钮 (输入系统密码) 就可以安装成功。</p></li>
+<p><mark>2020-06-25 更新，在 Blender 中也可以制作字幕，给Blender安装 Subsimport 这个插件就可以实现 (支持 2.79 与 2.80+)，
+<br />插件地址： <a href="https://github.com/doakey3/Subsimport/releases">https://github.com/doakey3/Subsimport/releases</a></mark></p>
 
-<li><p>双击解压 Argyll_V2.x.x_linux_x86_64_bin.tgz，然后在系统的图像菜单中启动 DisplayCAL ，点击菜单 <code>文件 -&gt; 定位 ArgyllCMS 可执行文件…</code>
-打开刚刚解压好的 <code>Argyll_V2.x.x</code> 文件夹，DisplayCAL 会自动进行设置。</p></li>
-</ul>
+<p>我在 Xubuntu 18.04 软件源中已经找不到以前那些口碑相传的字幕编辑软件，
+<br />因为那些软件太陈旧，已经从软件源中移除。</p>
 
-<p><img src="/img/displaycal02.jpg"/></p>
-
-<ul>
-<li><p><code>选择保存路径…</code> 选项，可以自定义之后生成的ICC文件保存的文件夹，方便文件备份。</p></li>
-
-<li><p>这步也很重要，安装设置好软件后<code>需要重启系统</code>，不然 DisplayCAL 无法找到 SpyderX Pro 校色仪。</p></li>
-</ul>
-
-<hr />
-
-<p><strong>使用 DisplayCAL 进行屏幕校色：</strong></p>
-
-<ul>
-<li><p>重启 Xubuntu 系统后需要让显示器预热30分钟，使用显示器上的调节按钮<code>1. 将显示器去蓝光、自动调光等自动的功能关闭</code>，<code>2. 将显示器颜色设置为用户自定义</code>。</p></li>
-
-<li><p>之后要把显示器屏幕倾斜一些，好让校色仪可以紧贴屏幕，现在将校色仪的USB插到主机上，<code>但不要打开校色仪的盖子</code>。</p></li>
-
-<li><p>启动 DisplayCAL，点击菜单<code>工具 -&gt; 校色仪 -&gt; 校色仪自校准</code>，来自动检测显示器的类型。</p></li>
-</ul>
-
-<p><img src="/img/displaycal03.jpg"/></p>
-
-<ul>
-<li>选择一个校色方案，这里在设置中选择：<code>照片 (D50,伽玛值 2.2)</code> (Photo (D50, Gamma 2.2))
-<br/>然后选择<code>校准</code>选项栏，把白电平的设置改为<code>自定义</code>，默认值为<code>120</code> (White level: Custom, 120 cd/m²)</li>
-</ul>
-
-<p><img src="/img/displaycal04.jpg"/></p>
-
-<p><img src="/img/displaycal05.jpg"/></p>
-
-<ul>
-<li>点击软件下边的<code>校准 &amp; 配置文件</code>按钮，开始校色了～</li>
-</ul>
-
-<p><img src="/img/displaycal06.jpg"/></p>
-
-<ul>
-<li>这时会出现一个大的方形界面，继续点击下边的开始校准按钮。
-<br/>然后会弹出一个很长长的长条对话框，上面说的意思是<code>现在不要打开校色仪的盖子</code>，点击界面上的<code>确定</code>按钮继续。
-<br/>这时又弹出一个很正常的矩形对话框，上面说<code>把校色仪的盖子打开，放到大的方形界面上</code>，放好校色仪后，点击<code>确定</code>按钮。</li>
-</ul>
-
-<hr />
-
-<ul>
-<li>正式开始 :) 点击<code>交互式显示调整</code>对话框<code>左侧的按钮</code>进行测量。
-<br/>这里需要手动调节显示器上的设置按钮，使对话框中的色条对齐到滑片中间的小三角上，对准后文字就会变成绿色。</li>
-</ul>
-
-<p><img src="/img/displaycal07.jpg"/></p>
-
-<ul>
-<li>需要注意的是手动调节显示器需要些耐心。
-<br/>先调节显示器<code>亮度/对比度</code>将下边的文字变绿，在根据 DisplayCAL 对话框中调节<code>红、绿、蓝中突出的的数值</code>。
-<br/>然后会发现 DisplayCAL 对话框中的<code>亮度</code>文字不再是绿色，这时只调节显示器中的<code>亮度</code>继续让其变绿。
-<br/>这样反复调整显示器按钮，直到 DisplayCAL 对话框中滑片都对齐到小三角，上下两部分的<code>文字都变成绿色</code>为止。</li>
-</ul>
-
-<p><img src="/img/displaycal08.jpg"/></p>
-
-<ul>
-<li>再点击<code>交互式显示调整</code>对话框<code>左侧的按钮</code>停止测量。
-<br/>点击右侧的<code>继续校准</code>按钮，继续校色。</li>
-</ul>
-
-<hr />
-
-<ul>
-<li>使用<code>照片 (D50,伽玛值 2.2)</code>这个校色方案，会有两个阶段：
-<br/>第一阶段：用时较长，当完成后会弹出<code>很长长的长条对话框</code>，提示用户<code>将校色仪取下，并盖上盖子</code>，点击<code>确定</code>按钮。
-<br/>第二阶段：又弹出那个很正常的<code>矩形对话框</code>，提示用户<code>把校色仪的盖子打开，放到大的方形界面上</code>点击<code>确定</code>按钮。</li>
-</ul>
-
-<hr />
-
-<ul>
-<li>然后开始继续校对直到完成，最后弹出对话框提示用户确定生成并安装ICC文件。
-<br/>如果用户使用闭源显卡驱动，生成ICC文件时会有一个报错提示，但这个感觉并不会产生影响，ICC文件照样可以使用。
-<br/>如果你真的很纠结这个报错，你可以使用开源显卡驱动，并安装<code>xiccd</code>软件包，可以顺利完成 (但xiccd可能会有吃CPU的问题)</li>
-</ul>
-
-<p><img src="/img/displaycal09.jpg"/></p>
-
-<p>在 Xubuntu 系统中 DisplayCAL 自带的<code>Profile Loader</code>会自动开机加载ICC文件，适合使用一个显示器的用户。
-<br/>在 Ubuntu 或 Kubuntu 系统中有<code>系统颜色配置</code>，可以使多个显示器加载不同的ICC文件。
-<br/>Xubuntu 系统使用的 Xfce4 桌面环境的开发分支中也已经支持<code>系统颜色配置</code>，敬请期待。</p>
-
-<p><strong>在 GNU/Linux 体系中就是这样给显示器校色的～颜色真的很正呢 :)</strong></p>
+<p>不过总有新软件顶上，就是使用GTK+3编写的：<code>subtitleeditor</code>
+<br />使用命令行或新立得(Synaptic)来安装，系统自带的软件图形安装器搜不到。
+<br />软件的官方地址：<a target="_blank" rel="nofollow" href="https://kitone.github.io/subtitleeditor/">&gt;重重点击</a></p>
 
 <hr />
 
@@ -206,7 +126,7 @@ Blog License:
 				<footer class="entry__footer">
 					
 <div class="entry__tags">
-			<a class="entry__tag btn" href="/zh/tags/hardware/">Hardware</a>
+			<a class="entry__tag btn" href="/zh/tags/freesoftware/">Freesoftware</a>
 			<a class="entry__tag btn" href="/zh/tags/ubuntu/">Ubuntu</a>
 </div>
 					
@@ -222,16 +142,16 @@ Blog License:
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="/zh/post/zh/gimagereader-and-subtitleeditor/">
+              <a href="/zh/post/slos-gimpainter-released/">
                 <span class="button__icon">&lt;</span>
-                <span class="button__text">提取图片上的文字 &amp; 新的字幕编辑器</span>
+                <span class="button__text">我的新项目 SLOS-GIMPainter 发布</span>
               </a>
             </span>
           
           
             <span class="button next">
-              <a href="/zh/post/zh/beautiful-icon-for-qjoypad/">
-                <span class="button__text">制作了QjoyPad的美观图标</span>
+              <a href="/zh/post/spyderx-on-xubuntu/">
+                <span class="button__text">SpyderX on Xubuntu 显示器校色</span>
                 <span class="button__icon">></span>
               </a>
             </span>

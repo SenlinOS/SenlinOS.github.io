@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#1b1b1b">
-	<title>解决安装单系统Xubuntu时grub安装失败 | SENLINOS ON THE WEB</title>
+	<title>L(X)ubuntu中设置 Wacom CTL-671 | SENLINOS ON THE WEB</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<link rel="stylesheet" href="/css/float.css">
@@ -76,50 +76,77 @@
 		<div class="single block">
 			<article class="entry">
 	<div class="entry__meta meta mb">
-	<time class="entry__meta-published meta-published" datetime="2019-03-19T16:19:16&#43;08:00">2019-03-19</time>
+	<time class="entry__meta-published meta-published" datetime="2018-04-29T00:09:52&#43;08:00">2018-04-29</time>
 	</div>
-				<center><h1 class="entry__title">解决安装单系统Xubuntu时grub安装失败</h1></center>
-				<div class="entry__content"><p><mark>2020-11-21更新，这个只是 Xubuntu 18.04 系统的问题，现在使用 Xubuntu 20.04 不单独划分EFI分区，只使用 /分区、Home分区也可以正常安装。</mark></p>
+				<center><h1 class="entry__title">L(X)ubuntu中设置 Wacom CTL-671</h1></center>
+				<div class="entry__content"><p>在 Lubuntu 系统中不需要图形界面也可以设置 Wacom板子。
+<br/>先安装 xserver-xorg-input-wacom，再安装 xinput-calibrator，在“系统工具”菜单里启动 Calibrate Touchscreen 这个软件，
+点击四个“校准十字”后在终端中可以看到 Wacom板子的信息。</p>
 
-<p>我一直贯彻“<code>不使用盗版系统与软件来创作自己的CG作品</code>”，
-但彻底抛弃盗版是个循序渐进的过程，我不能一下就抛弃掉盗版的Win7,
-因为要使用网银或网盘。
-不过我在创造CG作品时都是使用Xubuntu与自由软件( GNU/Linux )。</p>
+<p>查看板子的 x、y 的坐标参数，我的板子的坐标参数是：max_x=21648, max_y=13530</p>
 
-<p>不过现在手机银行与网盘比电脑上的会更好用，我就是在平板上安装了网盘app使用，
-而不需要费力在Linux系统中使用Wine模拟器来折腾它们 :)</p>
+<p><img src="/img/wacom-ctl671xy.png"/></p>
 
-<p>对于CG创作我也完全可以在GNU/Linux体系下完成，
-所以我决定把Xubuntu变成电脑中的唯一操作系统，
-<code>是时候抛弃掉盗版系统了</code> O(^o^)O</p>
+<p>在终端输入 xsetwacom &ndash;list 命令，会看到自己板子的设备名字：
+<br/>Wacom Bamboo One M Pen stylus</p>
 
-<p><strong>遇到grub安装失败，系统无法引导</strong></p>
+<p>现在的就是板子设置参数，点击查看 Wacom CTL-671 板子的sh脚本参数：
+<br/><a target="_blank" rel="nofollow" href="/databox/linuxwacom-ctl671-settings.txt"><strong>&gt; sh脚本参数</strong></a></p>
 
-<p>我在给笔记本电脑安装单系统Xubuntu时也遇到这个问题，在第二次重安装时连接了网络，
-幸运的安装系统成功了！所以我也没在意这个问题。</p>
+<p><strong>参数解析：</strong></p>
 
-<p>这次我给电脑安装单系统Xubuntu时网络到期停用，还没有新的网络。
-<br/>grub安装失败的问题再次出现，我用手机搜索到五花八门的解决方法。
-<br/>按一些方法几次乱撞失败后，终于解决了这个问题！</p>
+<ul>
+<li><p>tabletstylus=&ldquo;Wacom Bamboo One M Pen stylus&rdquo;
+<br/>就是之前在终端看到的自己板子的设备名字。</p></li>
 
-<p><img src="/img/xubuntu-efi.jpg"/></p>
+<li><p>default area : 0 0 21648 12177
+<br/>这个参数是板子x，y 坐标对齐 16 : 9 比例的显示器屏幕 （对齐屏幕比例）</p></li>
+</ul>
 
-<p>图中A，我看网络上大家在制作系统安装盘时用到各种启动盘软件，
-其实Ubuntu中的<code>启动盘创建器</code>是最好用的，简单方便的就可以制作出<code>Live-系统U盘</code>。</p>
+<p>你会发现 y 的参数变少了，因为板子的默认比例比 16 : 9 要大，可以使用 GIMP 的“缩放图像”来计算。
+可以在 GIMP 中新建个 1920 x 1080 的文件，然后在“缩放图像”的保持比例下，
+把 1920 改成板子的 x 坐标数值：21648，这样就算出了对应显示器比例的 y 坐标数值：12177</p>
 
-<p>图中B，电脑设置开机从U盘启动后，会看到<code>文字列表式的开机画面</code>,说明这是<code>UEFI启动模式</code>。
-所以UEFI启动模式就要对应<code>EFI系统分区</code>。</p>
+<p><img src="/img/xy16-9.png"/></p>
 
-<p>图中1，这里是解决问题的关键，一定要新建300m<code>EFI系统分区</code>，在“用于”的下拉菜单中就可以直接选择，如<code>图中2</code>所示。</p>
+<ul>
+<li><p>screenX=1920，screenY=1080，是显示器的分辨率。</p></li>
 
-<p>我依次创建的分区是：EFI系统分区、/分区、Home分区。<code>EFI系统分区一定要最先创建</code>。</p>
+<li><p>xsetwacom &ndash;set &ldquo;$tabletstylus&rdquo; Button 2 3
+<br/>xsetwacom &ndash;set &ldquo;$tabletstylus&rdquo; Button 3 2
+<br/>这两个是压感笔的侧键，Button 2是下侧键，Button 3是上侧键。
+<br/>后面的数值2是 [中键] ，3代表 [右键]</p></li>
 
-<p>然后一路根据系统提示，Xubuntu系统就会顺利的安装成功。
-<br/>初建分区时系统会自动格式化，这些截图是我再次启动U盘时拍照的，所以已经显示有系统了！<code>EFI分区</code>的文件系统会自动使用fat32，不需要自己去设置。
-<br/><code>/分区</code>与<code>Home分区</code>的文件系统我习惯使用Ext3。</p>
+<li><p>xsetwacom set &lsquo;Wacom Bamboo One M Pen stylus&rsquo; rotate half
+<br/>最后这行参数是把板子区域旋转180度，不旋转可以把这个参数删掉。</p></li>
+</ul>
 
-<p><strong>现在，不使用盗版系统与软件，我已经完全做到了～万岁！！！</strong>
-<br/>Xubuntu～万岁！！！GNU/Linux～万岁！！！</p>
+<p>新建个空白文件，把已经写好的脚本参数复制进去，命名为 Wacom671.sh 保存。
+ <br/>右键 Wacom671.sh 打开 [文件属性]，把权限中的执行参数改为 [任何人]</p>
+
+<p>打开 Lubuntu 系统菜单，首选项 -&gt; LXSession 配置
+<br/>在 [自动启动] 中添加 Wacom671.sh 文件的路径，点击 [添加] 按钮完成操作。
+<br/>注销再登录系统，Wacom CTL-671 板子就可以使用设置了，板子会与显示器对齐比例，侧键也是自定义的。</p>
+
+<hr />
+
+<p><strong>Xubuntu系统或Xfce桌面环境中的自启动设置：</strong></p>
+
+<ul>
+<li>打开Xfce的设置管理器 -&gt; 会话和启动</li>
+</ul>
+
+<p><img src="/img/xfce-seting.jpg"/></p>
+
+<ul>
+<li>在<code>应用程序自启动</code>选项中点击<code>添加</code>按钮，填写上<code>名称</code>，<code>命令</code>栏中开打刚刚写好的 Wacom671.sh 文件</li>
+</ul>
+
+<p><img src="/img/add-wacom.png"/></p>
+
+<ul>
+<li>点击确定，注销再登录系统，板子即可使用。</li>
+</ul>
 
 <hr />
 
@@ -132,7 +159,7 @@ Blog License:
 				<footer class="entry__footer">
 					
 <div class="entry__tags">
-			<a class="entry__tag btn" href="/zh/tags/ubuntu/">Ubuntu</a>
+			<a class="entry__tag btn" href="/zh/tags/wacom/">Wacom</a>
 </div>
 					
 <div class="entry__share share">
@@ -147,16 +174,16 @@ Blog License:
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="/zh/post/zh/beautiful-icon-for-qjoypad/">
+              <a href="/zh/post/mypaint-brushes-for-gimp-2.10-by_senlinos/">
                 <span class="button__icon">&lt;</span>
-                <span class="button__text">制作了QjoyPad的美观图标</span>
+                <span class="button__text">MyPaint-Brushes for GIMP 2.10</span>
               </a>
             </span>
           
           
             <span class="button next">
-              <a href="/zh/post/zh/modify-delux-t9-keyboard-mapping/">
-                <span class="button__text">在GNU/Linux中修改T9键盘映射</span>
+              <a href="/zh/post/azpainter-and-my-git-warehouse/">
+                <span class="button__text">AzPainter 新版发布 与 我的Git-仓库</span>
                 <span class="button__icon">></span>
               </a>
             </span>

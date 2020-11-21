@@ -17,78 +17,228 @@
   </url>
   
   <url>
-    <loc>/zh/post/zh/slos-gimpainter-released/</loc>
+    <loc>/zh/post/slos-gimpainter-released/</loc>
     <lastmod>2020-06-23T20:05:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/slos-gimpainter-released/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/post/slos-gimpainter-released/"
+                />
   </url>
   
   <url>
-    <loc>/zh/post/zh/gimagereader-and-subtitleeditor/</loc>
+    <loc>/zh/post/gimagereader-and-subtitleeditor/</loc>
     <lastmod>2019-11-19T17:51:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/gimagereader-and-subtitleeditor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/post/gimagereader-and-subtitleeditor/"
+                />
   </url>
   
   <url>
-    <loc>/zh/post/zh/spyderx-on-xubuntu/</loc>
+    <loc>/zh/post/spyderx-on-xubuntu/</loc>
     <lastmod>2019-06-16T19:01:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/spyderx-on-xubuntu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/post/spyderx-on-xubuntu/"
+                />
   </url>
   
   <url>
-    <loc>/zh/post/zh/beautiful-icon-for-qjoypad/</loc>
+    <loc>/zh/post/beautiful-icon-for-qjoypad/</loc>
     <lastmod>2019-04-27T13:51:57+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/beautiful-icon-for-qjoypad/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/post/beautiful-icon-for-qjoypad/"
+                />
   </url>
   
   <url>
-    <loc>/zh/post/zh/xubuntu-uefi-grub/</loc>
+    <loc>/zh/post/xubuntu-uefi-grub/</loc>
     <lastmod>2019-03-19T16:19:16+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/xubuntu-uefi-grub/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/post/xubuntu-uefi-grub/"
+                />
   </url>
   
   <url>
-    <loc>/zh/post/zh/modify-delux-t9-keyboard-mapping/</loc>
+    <loc>/zh/post/modify-delux-t9-keyboard-mapping/</loc>
     <lastmod>2018-11-29T00:38:43+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/modify-delux-t9-keyboard-mapping/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/post/modify-delux-t9-keyboard-mapping/"
+                />
   </url>
   
   <url>
-    <loc>/zh/post/zh/gimp-the-focus-automatically-returns-to-the-canvas-window/</loc>
+    <loc>/zh/post/gimp-the-focus-automatically-returns-to-the-canvas-window/</loc>
     <lastmod>2018-11-11T09:25:27+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/gimp-the-focus-automatically-returns-to-the-canvas-window/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/post/gimp-the-focus-automatically-returns-to-the-canvas-window/"
+                />
   </url>
   
   <url>
-    <loc>/zh/post/zh/chromium-keyrings-and-usb-soundcard/</loc>
+    <loc>/zh/post/chromium-keyrings-and-usb-soundcard/</loc>
     <lastmod>2018-07-24T15:32:24+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/chromium-keyrings-and-usb-soundcard/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/post/chromium-keyrings-and-usb-soundcard/"
+                />
   </url>
   
   <url>
-    <loc>/zh/post/zh/mpv_and_blender-vse-transform-tool/</loc>
+    <loc>/zh/post/mpv_and_blender-vse-transform-tool/</loc>
     <lastmod>2018-05-31T12:45:35+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/mpv_and_blender-vse-transform-tool/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/post/mpv_and_blender-vse-transform-tool/"
+                />
   </url>
   
   <url>
-    <loc>/zh/post/zh/lubuntu-18.04-blender-mcomix/</loc>
+    <loc>/zh/post/lubuntu-18.04-blender-mcomix/</loc>
     <lastmod>2018-05-12T17:54:16+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/lubuntu-18.04-blender-mcomix/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/post/lubuntu-18.04-blender-mcomix/"
+                />
   </url>
   
   <url>
-    <loc>/zh/post/zh/mypaint-brushes-for-gimp-2.10-by_senlinos/</loc>
+    <loc>/zh/post/mypaint-brushes-for-gimp-2.10-by_senlinos/</loc>
     <lastmod>2018-05-01T11:35:37+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/mypaint-brushes-for-gimp-2.10-by_senlinos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/post/mypaint-brushes-for-gimp-2.10-by_senlinos/"
+                />
   </url>
   
   <url>
-    <loc>/zh/post/zh/linuxwacom-ctl671-settings/</loc>
+    <loc>/zh/post/linuxwacom-ctl671-settings/</loc>
     <lastmod>2018-04-29T00:09:52+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/linuxwacom-ctl671-settings/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/post/linuxwacom-ctl671-settings/"
+                />
   </url>
   
   <url>
-    <loc>/zh/post/zh/azpainter-and-my-git-warehouse/</loc>
+    <loc>/zh/post/azpainter-and-my-git-warehouse/</loc>
     <lastmod>2018-04-24T10:11:47+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/azpainter-and-my-git-warehouse/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/post/azpainter-and-my-git-warehouse/"
+                />
   </url>
   
   <url>
-    <loc>/zh/post/zh/azpainter-for-linux-colorwheel-analysis/</loc>
+    <loc>/zh/post/azpainter-for-linux-colorwheel-analysis/</loc>
     <lastmod>2017-10-18T00:19:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/azpainter-for-linux-colorwheel-analysis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/post/azpainter-for-linux-colorwheel-analysis/"
+                />
   </url>
   
   <url>
-    <loc>/zh/post/zh/translated-chinese-simplified-interface-for-azpainter-2-linux/</loc>
+    <loc>/zh/post/translated-chinese-simplified-interface-for-azpainter-2-linux/</loc>
     <lastmod>2017-04-24T21:14:34+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/translated-chinese-simplified-interface-for-azpainter-2-linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/post/translated-chinese-simplified-interface-for-azpainter-2-linux/"
+                />
   </url>
   
   <url>
