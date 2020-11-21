@@ -1196,9 +1196,16 @@ button .main-nav__btn-box:hover{
 	background-color: #fff;
 }
 
+.post-pinned {
+    vertical-align: inherit;
+    width: 19px;
+    height: 19px;
+    }
+
 a{outline:none;}
 a:active{noOutline:expression_r(this.onFocus=this.blur());}
 :focus{outline:0;}
+}
 /* Print */
 @media print {
 	.entry__content a,

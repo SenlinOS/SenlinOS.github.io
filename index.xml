@@ -37,7 +37,7 @@
       <pubDate>Tue, 19 Nov 2019 17:51:44 +0800</pubDate>
       
       <guid>/post/gimagereader-and-subtitleeditor/</guid>
-      <description>提取图片上的文字： 2020-06-11 更新：百度在线翻译已经支持粘贴图片进行翻译。 在看图片类的复杂外文时，想找个在线图片翻译网站～但没找到！ 看一些帖子说手机安</description>
+      <description>提取图片上的文字： 2020-06-11 更新，百度在线翻译已经支持粘贴图片进行翻译。 在看图片类的复杂外文时，想找个在线图片翻译网站～但没找到！ 看一些帖子说手机安</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@
       <pubDate>Tue, 19 Mar 2019 16:19:16 +0800</pubDate>
       
       <guid>/post/xubuntu-uefi-grub/</guid>
-      <description>我一直贯彻“不使用盗版系统与软件来创作自己的CG作品”， 但彻底抛弃盗版是个循序渐进的过程，我不能一下就抛弃掉盗版的Win7, 因为要使用网银或</description>
+      <description>2020-11-21更新，这个只是 Xubuntu 18.04 系统的问题，现在使用 Xubuntu 20.04 不使用EFI系统分区，只使用 /分区、Home分区也可以正常安装。 我一直贯彻“不</description>
     </item>
     
     <item>
@@ -82,7 +82,7 @@
       <pubDate>Sun, 11 Nov 2018 09:25:27 +0800</pubDate>
       
       <guid>/post/gimp-the-focus-automatically-returns-to-the-canvas-window/</guid>
-      <description>2019-10-09更新：原来有四个设置，现在两个设置就可以。 直到 GIMP 2.10.x 单击其他对话框的选项后，画布窗口会失去焦点。 此时按下空格键相关快捷键将</description>
+      <description>2019-10-09更新，原来有四个设置，现在两个设置就可以。 直到 GIMP 2.10.x 单击其他对话框的选项后，画布窗口会失去焦点。 此时按下空格键相关快捷键将</description>
     </item>
     
     <item>
