@@ -365,8 +365,7 @@ main {
 }
 html {
 	overflow: auto;
-	background: url("/img/bgm.svg") repeat-x;
-	background-color: #f4f4f4;
+	background: #f4f4f4 url("/img/bgm.svg") repeat-x;
 }
 
 main {
