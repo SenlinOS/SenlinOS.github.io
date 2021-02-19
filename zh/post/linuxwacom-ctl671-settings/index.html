@@ -69,7 +69,7 @@
 </div>
 
 	<div id="child2" style="display:none">
-| <a href="https://senlinos.github.io">GitHub Pages</a> | <a href="https://senlinos.gitlab.io">GitLab Pages</a> |
+| <a href="https://senlinos.github.io">GitHub Pages</a> | <a href="https://senlinos.gitlab.io">GitLab Pages</a> | <a href="https://senlinos.gitee.io">Gitee Pages</a> |
 </div>
 
 		
@@ -90,8 +90,52 @@
 <p>在终端输入 xsetwacom list 命令，会看到自己板子的设备名字：
 <br/>Wacom Bamboo One M Pen stylus</p>
 
-<p>现在的就是板子设置参数，点击查看 Wacom CTL-671 板子的sh脚本参数：
-<br/><a target="_blank" rel="nofollow" href="/databox/linuxwacom-ctl671-settings.txt"><strong>&gt; sh脚本参数</strong></a></p>
+<p>查看 Wacom CTL-671 板子的sh脚本参数：
+<details>
+  <summary><mark>点击展开：sh脚本参数</mark></summary></p>
+
+<pre><code>---------------------------------
+WACOM CTL-671
+----------------------------------
+
+#! /bin/bash
+# Setup xsetwacom script for CTL-671
+# License: CC-0/Public-Domain license
+# author: deevad
+# The parameter modification: SenlinOS
+
+# Tablet definition
+tabletstylus=&quot;Wacom Bamboo One M Pen stylus&quot;
+tableteraser=&quot;Wacom Bamboo One M Pen eraser&quot;
+
+# Reset
+xsetwacom --set &quot;$tabletstylus&quot; ResetArea
+xsetwacom --set &quot;$tableteraser&quot; ResetArea
+xsetwacom set &quot;$tabletstylus&quot; RawSample 4
+
+# Screen mapping and keep ratio
+# xsetwacom get &quot;$tabletstylus&quot; Area
+# default area : 0 0 21648 12177
+xsetwacom --set &quot;$tabletstylus&quot; MapToOutput &quot;HEAD-0&quot;
+xsetwacom --set &quot;$tableteraser&quot; MapToOutput &quot;HEAD-0&quot;
+screenX=1920
+screenY=1080
+Xtabletmaxarea=21648
+areaY=$(( $screenY * $Xtabletmaxarea / $screenX ))
+xsetwacom --set &quot;$tabletstylus&quot; Area 0 0 &quot;$Xtabletmaxarea&quot; &quot;$areaY&quot;
+xsetwacom --set &quot;$tableteraser&quot; Area 0 0 &quot;$Xtabletmaxarea&quot; &quot;$areaY&quot;
+
+xsetwacom --set &quot;$tabletstylus&quot; Button 2 3
+xsetwacom --set &quot;$tabletstylus&quot; Button 3 2
+
+# Left handed stylus
+xsetwacom set 'Wacom Bamboo One M Pen stylus' rotate half
+-----
+</code></pre>
+
+<p></details></p>
+
+<hr />
 
 <p><strong>参数解析：</strong></p>
 
