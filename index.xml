@@ -23,6 +23,15 @@
     </item>
     
     <item>
+      <title></title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
+      <description>联系 / CONTACT</description>
+    </item>
+    
+    <item>
       <title>我的新项目 SLOS-GIMPainter 发布</title>
       <link>/post/slos-gimpainter-released/</link>
       <pubDate>Tue, 23 Jun 2020 20:05:55 +0800</pubDate>
@@ -64,7 +73,7 @@
       <pubDate>Tue, 19 Mar 2019 16:19:16 +0800</pubDate>
       
       <guid>/post/xubuntu-uefi-grub/</guid>
-      <description>2020-11-21更新，这个只是 Xubuntu 18.04 系统的问题，现在使用 Xubuntu 20.04 不单独划分EFI分区，只使用 /分区、Home分区也可以正常安装。 我一直贯彻“不</description>
+      <description>2020-11-21 更新，这个只是 Xubuntu 18.04 系统的问题，现在使用 Xubuntu 20.04 不单独划分EFI分区，只使用 /分区、Home分区也可以正常安装。 我一直贯彻“不使用盗版系统与软件</description>
     </item>
     
     <item>
@@ -82,7 +91,7 @@
       <pubDate>Sun, 11 Nov 2018 09:25:27 +0800</pubDate>
       
       <guid>/post/gimp-the-focus-automatically-returns-to-the-canvas-window/</guid>
-      <description>2019-10-09更新，原来有四个设置，现在两个设置就可以。 直到 GIMP 2.10.x 单击其他对话框的选项后，画布窗口会失去焦点。 此时按下空格键相关快捷键将</description>
+      <description>2019-10-09 更新，原来有四个设置，现在两个设置就可以。 直到 GIMP 2.10.x 单击其他对话框的选项后，画布窗口会失去焦点。 此时按下空格键相关快捷键将不起作用。 解决方案</description>
     </item>
     
     <item>
@@ -91,7 +100,7 @@
       <pubDate>Tue, 24 Jul 2018 15:32:24 +0800</pubDate>
       
       <guid>/post/chromium-keyrings-and-usb-soundcard/</guid>
-      <description>2019-03-29更新：Firefox与Chromium都使用，各有优点。 火狐中浏览PDF的功能很全面。插件多、安装也方便。 现在Chrom</description>
+      <description>2021-03-06 更新，现在只使用Firefox火狐浏览器。 火狐中浏览PDF的功能很全面。插件多、安装也方便。 解决打开 Chromium 浏览器需要密码 我使用 Xubuntu 系统时喜欢使用</description>
     </item>
     
     <item>
@@ -100,7 +109,7 @@
       <pubDate>Thu, 31 May 2018 12:45:35 +0800</pubDate>
       
       <guid>/post/mpv_and_blender-vse-transform-tool/</guid>
-      <description>MPV 播放器： 2019-03-26更新：现在使用的是GNOME-MPV，操作是一样的。 在 GNU/Linux 系统中我最喜欢的影音播放器就是 MPV， 其界面非常简洁，</description>
+      <description>MPV 播放器： 2021-03-06 更新，现在使用的是Celluloid (就是以前的 GNOME-MPV)，操作是一样的。 在 GNU/Linux 系统中我最喜欢的影音播放器就是 MPV， 其</description>
     </item>
     
     <item>
@@ -136,7 +145,7 @@
       <pubDate>Tue, 24 Apr 2018 10:11:47 +0800</pubDate>
       
       <guid>/post/azpainter-and-my-git-warehouse/</guid>
-      <description>2020-05-03 更新：软件作者已经把 AzPainter 的源码包统一放到他的网站上， 现在下载源码包请到：&amp;gt; Azsky2 你也可以去第三方下载：&amp;gt; Symbian9 我的中文翻译文件也已经更新</description>
+      <description>2020-05-03 更新，软件作者已经把 AzPainter 的源码包统一放到他的网站上： 现在下载源码包请到：&amp;gt; Azsky2 你也可以去第三方下载：&amp;gt; Symbian9 我的中文翻译文件也已经更新</description>
     </item>
     
     <item>

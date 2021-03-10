@@ -799,6 +799,10 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 	margin-bottom: 0;
 }
 
+.title-bottom {
+	margin-bottom: 30px;
+}
+
 .entry__meta {
 	font-size: .875rem;
 	color: #999;
