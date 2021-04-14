@@ -5,13 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#1b1b1b">
-	<title>X(L)ubuntu-18.04、Blender、Mcomix | SENLINOS ON THE WEB</title>
+	<title>Hardware Linux | SENLINOS ON THE WEB</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<link rel="stylesheet" href="/css/main1.css">
 	<link rel="stylesheet" href="/css/themes/mysite.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+	<link rel="alternate" type="application/rss+xml" href="/zh/tags/hardware-linux/index.xml" title="SENLINOS ON THE WEB">
 	<link rel="manifest" href="/manifest.json">
 		
 </head>
@@ -70,175 +71,54 @@
 	<div class="primary">
 	
 	<main class="main">
-	<div id="child1" style="display:none">
+		
+		<div id="child1" style="display:none">
 | <a href="/">English</a> | <a href="/zh/">中文</a> |
 </div>
 
-	<div id="child2" style="display:none">
+		<div id="child2" style="display:none">
 <a href="https://senlinos.com"><img style="width: 35px; height: 19px;" alt="main" title="SenlinOS.com" src="/img/main.svg"/></a> | <a href="https://senlinos.github.io">GitHub Pages</a> | <a href="https://senlinos.gitlab.io">GitLab Pages</a> | <a href="https://senlinos.gitee.io">Gitee Pages</a> |
 </div>
 
-		
-		<div class="single block">
-			<article class="entry">
-	<div class="entry__meta meta mb">
-	<time class="entry__meta-published meta-published" datetime="2018-05-12T17:54:16&#43;08:00">2018-05-12</time>
-	</div>
-				<center><h1 class="entry__title title-bottom">X(L)ubuntu-18.04、Blender、Mcomix</h1></center>
-				<div class="entry__content"><p><mark>2018-05-16 更新系统到 Xubuntu 18.04</mark>
-<br/>考虑到以后 Lubuntu 系统会转到 QT 版本，但我比较喜欢使用 GTK 的程序，
-所以决定还是转到 Xubuntu，安装 新立得软件包管理器(Synaptic) 后就可以方便的使用了。</p>
+		<div class="cards">
+			
+				<div class="card card--1col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt">
+      
+      <a class="entry__title-link" href="/zh/post/spyderx-on-xubuntu/">SpyderX on Xubuntu 显示器校色</a>
+</h1>
+	<div class="entry__content">前段时间购买了 SpyderX Pro 显示器校色仪。 一直在摸索怎样使用，毕竟在 GNU/Linux 系统中这方面的资料很少！ 在 Xubuntu 系统的软件中心中就有校色软件 DisplayCAL，但</div>
+</article>
 
-<p>Xubuntu 系统在 系统设置 -&gt; 窗口管理器微调 -&gt;(辅助功能) 中，
-<br/>把<code>用来捕捉和移动窗口的按键</code>选项中的<code>Alt</code>改为<code>Super</code>就可以解放 ALT键。</p>
+				</div>
+			
+				<div class="card card--1col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt">
+      
+      <a class="entry__title-link" href="/zh/post/modify-delux-t9-keyboard-mapping/">在GNU/Linux中修改T9键盘映射</a>
+</h1>
+	<div class="entry__content">我的初代Delux(多彩)T9单手键盘已经使用3年多了，主要作为软件的快捷键使用。 现在新T9的型号已经改为T9U，这是我最喜欢的单手键盘版型</div>
+</article>
 
-<hr />
+				</div>
+			
+				<div class="card card--1col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt">
+      
+      <a class="entry__title-link" href="/zh/post/chromium-keyrings-and-usb-soundcard/">解决打开Chromium需要密码与USB声卡</a>
+</h1>
+	<div class="entry__content">2021-03-06 更新，现在只使用Firefox火狐浏览器。 火狐中浏览PDF的功能很全面。插件多、安装也方便。 解决打开 Chromium 浏览器需要密码 我使用 Xubuntu 系统时喜欢使用</div>
+</article>
 
-<p><strong>电脑系统更新到 Lubuntu 18.04 后的一些问题解决方法！</strong></p>
-
-<p><strong>跑字符式开机画面：</strong>
-<br/>以前安装完显卡驱动后系统重启时开机画面会自动变成字符式，说明显卡驱动已经安装成功。
-但现在安装显卡驱动后，是个分辨率很低与显示器分辨率不符的图形开机画面，不太好看！
-使用下面的命令可以让系统的开机画面变成跑字符的样式～酷酷的 :)</p>
-
-<pre><code class="language-markdown">sudo leafpad /etc/default/grub
-* 把 GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash&quot;
-* 改为 GRUB_CMDLINE_LINUX_DEFAULT=&quot;text&quot;
-sudo update-grub
-</code></pre>
-
-<hr />
-
-<p><strong>解放 ALT键：</strong>
-<br/>在使用软件时会用到 ALT键，但已经被 Lubuntu 18.04 系统占用了。
-<br/>在终端中用命令 <code>leafpad ~/.config/openbox/lubuntu-rc.xml</code> 打开此文件。
-<br/>使用菜单 搜索 -&gt; 查找，搜“mousebind”，找到并删除这段代码：</p>
-
-<pre><code class="language-markdown">  &lt;mousebind button=&quot;A-Left&quot; action=&quot;Press&quot;&gt;
-     &lt;action name=&quot;Focus&quot;/&gt;
-     &lt;action name=&quot;Raise&quot;/&gt;
-  &lt;/mousebind&gt;
-     &lt;mousebind button=&quot;A-Left&quot; action=&quot;Click&quot;&gt;
-     &lt;action name=&quot;Unshade&quot;/&gt;
-  &lt;/mousebind&gt;
-</code></pre>
-
-<p>然后将下面代码中的 <code>A-Ledt</code> 改为： <code>W-Left</code></p>
-
-<pre><code class="language-markdown">  &lt;mousebind button=&quot;A-Left&quot; action=&quot;Drag&quot;&gt;
-     &lt;action name=&quot;Move&quot;/&gt;
-  &lt;/mousebind&gt;
-</code></pre>
-
-<p>这样 ALT键 就被解放出来。这时按键盘的 Win键 (Super键) + 左键拖动，可以移动窗口。</p>
-
-<hr />
-
-<p><strong>设置 Blender 中文界面 与 ALT键模拟鼠标中键：</strong>
-<br/>在 Lubuntu 18.04 系统中 Blender 官网下载的免安装文件不起作用，
-所以在系统源安装了 Blender，但这个选中文界面后界面文字会变成 口口口…
-<br/>这里先安装中文字体：<code>fonts-wqy-microhei</code>
-<br/>在文件管理器中打开：<code>/usr/share/fonts/truetype/wqy</code>
-<br/>把 <code>wqy-microhei.ttc</code> 字体复制到自己的文件夹中，以后方便使用。
-<br/>使用 Ctrl + Alt + U 键打开 Blender 的用户设置，选择最右侧的 System 栏，
-在 Interface Font 项中打开之前自己文件夹中的字体，勾选 International Fonts，
-<br/>在选择语言为“简体中文”，翻译项中的3个按钮也全部选中。
-<br/>点击左下的“保存用户设置” 按钮后，重启 Blender 就是简体中文界面了。</p>
-
-<p>因为之前 ALT键 已经被解放出来，现在使用 Ctrl + Alt + U 键打开 Blender 的用户设置，选择输入栏，
-勾选鼠标项中的 <code>模拟3键鼠标</code>，点击左下的“保存用户设置”按钮。
-<br/>Blender 就可以使用 ALT键 + 左键 来旋转视图，等等一系列与 ALT键 有关的快捷键 ^o^</p>
-
-<hr />
-
-<p><strong>安装 Mcomix：</strong>
-<br/>在 Lubuntu 18.04 系统的软件源中已经抛弃了这个非常好用的阅读软件 ToT
-<br/>我们自己手动把 Mcomix 安装回来，打开 小M 的官网：
-<a target="_blank" rel="nofollow" href="https://sourceforge.net/p/mcomix/wiki/Home/">&gt; 重重点击</a></p>
-
-<p>1- 点击 “Download” 按钮下载源代码包。
-<br/>2- 安装依赖：<code>python-pil</code>、<code>python-subprocess32</code></p>
-
-<pre><code class="language-markdown">终端安装 czipfile：
-sudo apt-get install python-gevent python-pip
-sudo pip install --upgrade pip
-sudo pip install czipfile
-</code></pre>
-
-<p>3- 解压出软件包后，打开文件夹，点击文件管理器的菜单“工具 -&gt; 在终端中打开当前文件夹”，
-在终端中使用命令 <code>sudo python2 setup.py install</code> 来安装 Mcomix。</p>
-
-<p>之后安装 p7zip-full、unrar，这样 Mcomix 就可以直接读 7zip 与 RAR 压缩包了。
-<br/>安装 menulibre 可以给 Mcomix 在 Lubuntu系统菜单中建个快捷图标，也方便管理其他快捷图标。
-安装软件我喜欢用 “新立得软件包管理器” ，这个是最好的 ^_^</p>
-
-<hr />
-
-<p><center>
-Blog License:
-<br /><a rel="noopener noreferrer" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="/img/cc-by-sa.svg" alt="cc-by-sa"/></a>
-</center><p></p>
-</div>
-				
-				<footer class="entry__footer">
-					
-<div class="entry__tags">
-			<a class="entry__tag btn" href="/zh/tags/ubuntu/">Ubuntu</a>
-			<a class="entry__tag btn" href="/zh/tags/freesoftware/">Freesoftware</a>
-</div>
-					
-<div class="entry__share share">
-</div>
-				</footer>
-				
-			</article>
+				</div>
+			
 		</div>
 
 	
-      <div class="pagination">
-        <div class="pagination__buttons">
-          
-            <span class="button previous">
-              <a href="/zh/post/mpv_and_blender-vse-transform-tool/">
-                <span class="button__icon">&lt;</span>
-                <span class="button__text">MPV 与 Blender视频编辑插件</span>
-              </a>
-            </span>
-          
-          
-            <span class="button next">
-              <a href="/zh/post/mypaint-brushes-for-gimp-2.10-by_senlinos/">
-                <span class="button__text">MyPaint-Brushes for GIMP 2.10</span>
-                <span class="button__icon">></span>
-              </a>
-            </span>
-          
-        </div>
-    </div>
-
-	
-<div class="authorbox block">
-	<div class="author">
-		<figure class="author__avatar">
-			<img class="author__img" alt="SenlinOS (森林OS) avatar" src="/img/author.jpg" height="90" width="90">
-		</figure>
-		<div class="author__body">
-			<div class="author__name">
-				SenlinOS (森林OS)
-			</div>
-			<div class="author__bio">Comics Art with GNU/Linux</div>
-		<div style="text-align: left;"><img style="border: 0px solid ; width: 209px; height: 20px;" alt="yuyu" src="/img/yuyu.png"/></div>
-		<div style="text-align: left;"><img style="border: 0px solid ; width: 209px; height: 20px;" alt="yuyu1" src="/img/yuyu1.png"/></div>
-		</div>
-	</div>
-</div>
-
-	
-
-
-
-	
-	<div class="page block">
+	        <div class="page block">
 			<div style="text-align: right;"><a href="#top" target="_self"><img style="border: 0px solid ; width: 32px; height: 32px;" alt="Up" title="Up" src="/img/up.svg"/></a></div>
 </div>
 	</main>

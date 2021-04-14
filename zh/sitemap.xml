@@ -271,38 +271,6 @@
   </url>
   
   <url>
-    <loc>/zh/tags/azpainter/</loc>
-    <lastmod>2018-04-24T10:11:47+08:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/azpainter/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/zh/tags/azpainter/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh/tags/blender/</loc>
-    <lastmod>2018-05-31T12:45:35+08:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/blender/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/zh/tags/blender/"
-                />
-  </url>
-  
-  <url>
     <loc>/zh/tags/brushes/</loc>
     <lastmod>2020-06-23T20:05:55+08:00</lastmod>
     <priority>0</priority>
@@ -315,22 +283,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="/zh/tags/brushes/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh/tags/chromium/</loc>
-    <lastmod>2018-07-24T15:32:24+08:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/chromium/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/zh/tags/chromium/"
                 />
   </url>
   
@@ -367,50 +319,18 @@
   </url>
   
   <url>
-    <loc>/zh/tags/hardware/</loc>
+    <loc>/zh/tags/hardware-linux/</loc>
     <lastmod>2019-06-16T19:01:55+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/hardware/"
+                href="/tags/hardware-linux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/hardware/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh/tags/mcomix/</loc>
-    <lastmod>2018-05-12T17:54:16+08:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/mcomix/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/zh/tags/mcomix/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh/tags/mpv/</loc>
-    <lastmod>2018-05-31T12:45:35+08:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/mpv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/zh/tags/mpv/"
+                href="/zh/tags/hardware-linux/"
                 />
   </url>
   
@@ -432,7 +352,7 @@
   
   <url>
     <loc>/zh/tags/ubuntu/</loc>
-    <lastmod>2019-11-19T17:51:44+08:00</lastmod>
+    <lastmod>2019-03-19T16:19:16+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -459,22 +379,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="/zh/tags/wacom/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh/tags/warehouse/</loc>
-    <lastmod>2018-04-24T10:11:47+08:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/warehouse/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/zh/tags/warehouse/"
                 />
   </url>
   
