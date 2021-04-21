@@ -1192,7 +1192,7 @@ button .main-nav__btn-box:hover{
 }
 
 .imgboa {
-	  border-radius: 2px;
+	border-radius: 2px;
 }
 
 .imgboa:hover {
@@ -1206,15 +1206,15 @@ button .main-nav__btn-box:hover{
     }
 
 .artwork img {
-  width: 100%;
-  height: auto;
-  margin: 18px 0px 9px 0px;
+	width: 100%;
+	height: auto;
+	margin: 18px 0px 9px 0px;
 }
 
 .artworks img {
-  width: 500px;
-  height: auto;
-  margin: 18px 9px 9px 9px;
+	width: 500px;
+	height: auto;
+	margin: 18px 9px 9px 9px;
 }
 
 a{outline:none;}
