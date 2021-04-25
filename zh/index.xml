@@ -6,7 +6,7 @@
     <description>Recent content on SENLINOS ON THE WEB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jun 2020 20:05:55 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 25 Apr 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/zh/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,6 +18,15 @@
       
       <guid>/zh/about/</guid>
       <description>大家好！我是 森林OS (SenlinOS)。 使用 GNU/Linux 体系制作漫画。 我的项目： AzPainter (Linux版) 2.x 简体中文界面翻译：GitHub、 微云。 MyPaintBrushes-GIMP (画笔)</description>
+    </item>
+    
+    <item>
+      <title>在 GIMP 中手动保存临时预设</title>
+      <link>/zh/post/manually-save-temporary-presets/</link>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/post/manually-save-temporary-presets/</guid>
+      <description>Manually save temporary presets in GIMP English “如果 GIMP 可以临时保存画笔尺寸就好了！” 这是我想要的一个功能，但 GIMP 似乎没有这个功能！ 不过今天我偶然发现了这个特性：在 GIMP 中手动保存</description>
     </item>
     
     <item>

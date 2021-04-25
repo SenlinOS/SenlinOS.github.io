@@ -1217,6 +1217,20 @@ button .main-nav__btn-box:hover{
 	margin: 18px 9px 9px 9px;
 }
 
+#note {
+	width: 100%;
+	padding: 16px 16px;
+	padding-left: 4em;
+	color: #5A4C01;
+	text-align: left;
+	background-color: #FEE975;
+	margin: 0 auto;
+}
+
+.note-img {
+	background: url("/img/note-img.svg") no-repeat 1em center;
+}
+
 a{outline:none;}
 a:active{noOutline:expression_r(this.onFocus=this.blur());}
 :focus{outline:0;}
