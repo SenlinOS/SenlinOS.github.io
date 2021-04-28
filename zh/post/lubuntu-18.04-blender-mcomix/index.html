@@ -90,7 +90,7 @@
 所以决定还是转到 Xubuntu，安装 新立得软件包管理器(Synaptic) 后就可以方便的使用了。</p>
 
 <p>Xubuntu 系统在 系统设置 -&gt; 窗口管理器微调 -&gt;(辅助功能) 中，
-<br/>把<code>用来捕捉和移动窗口的按键</code>选项中的<code>Alt</code>改为<code>Super</code>就可以解放 ALT键。</p>
+<br/>把<code>用来捕捉和移动窗口的按键</code>选项中的 <kbd>Alt</kbd> 改为<kbd>Super</kbd> 就可以解放 <kbd>Alt</kbd>。</p>
 
 <hr />
 
@@ -109,8 +109,8 @@ sudo update-grub
 
 <hr />
 
-<p><strong>解放 ALT键：</strong>
-<br/>在使用软件时会用到 ALT键，但已经被 Lubuntu 18.04 系统占用了。
+<p><strong>解放 <kbd>Alt</kbd>：</strong>
+<br/>在使用软件时会用到 <kbd>Alt</kbd>，但已经被 Lubuntu 18.04 系统占用了。
 <br/>在终端中用命令 <code>leafpad ~/.config/openbox/lubuntu-rc.xml</code> 打开此文件。
 <br/>使用菜单 搜索 -&gt; 查找，搜“mousebind”，找到并删除这段代码：</p>
 
@@ -130,24 +130,24 @@ sudo update-grub
   &lt;/mousebind&gt;
 </code></pre>
 
-<p>这样 ALT键 就被解放出来。这时按键盘的 Win键 (Super键) + 左键拖动，可以移动窗口。</p>
+<p>这样 <kbd>Alt</kbd> 就被解放出来。这时按键盘的 <kbd>Win</kbd>(Super键)+鼠标左键拖动，可以移动窗口。</p>
 
 <hr />
 
-<p><strong>设置 Blender 中文界面 与 ALT键模拟鼠标中键：</strong>
+<p><strong>设置 Blender 中文界面 与 <kbd>Alt</kbd> 模拟鼠标中键：</strong>
 <br/>在 Lubuntu 18.04 系统中 Blender 官网下载的免安装文件不起作用，
 所以在系统源安装了 Blender，但这个选中文界面后界面文字会变成 口口口…
 <br/>这里先安装中文字体：<code>fonts-wqy-microhei</code>
 <br/>在文件管理器中打开：<code>/usr/share/fonts/truetype/wqy</code>
 <br/>把 <code>wqy-microhei.ttc</code> 字体复制到自己的文件夹中，以后方便使用。
-<br/>使用 Ctrl + Alt + U 键打开 Blender 的用户设置，选择最右侧的 System 栏，
+<br/>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>U</kbd> 键打开 Blender 的用户设置，选择最右侧的 System 栏，
 在 Interface Font 项中打开之前自己文件夹中的字体，勾选 International Fonts，
 <br/>在选择语言为“简体中文”，翻译项中的3个按钮也全部选中。
 <br/>点击左下的“保存用户设置” 按钮后，重启 Blender 就是简体中文界面了。</p>
 
-<p>因为之前 ALT键 已经被解放出来，现在使用 Ctrl + Alt + U 键打开 Blender 的用户设置，选择输入栏，
+<p>因为之前 ALT键 已经被解放出来，现在使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>U</kbd> 键打开 Blender 的用户设置，选择输入栏，
 勾选鼠标项中的 <code>模拟3键鼠标</code>，点击左下的“保存用户设置”按钮。
-<br/>Blender 就可以使用 ALT键 + 左键 来旋转视图，等等一系列与 ALT键 有关的快捷键 ^o^</p>
+Blender 就可以使用 <kbd>Alt</kbd>+鼠标左键 来旋转视图。</p>
 
 <hr />
 

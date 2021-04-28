@@ -417,7 +417,10 @@ pre code {
 }
 
 kbd {
-	font-weight: 700;
+	background: #FFF;
+	border: 2px outset #CCC;
+	border-radius: 0.3em;
+	padding: 1px;
 }
 
 figure {
