@@ -12,7 +12,7 @@ body {
 	font-weight: 400;
 	line-height: 1.4;
 	color: #3798fb;
-	background-color: #f4f4f4;
+	background-color: #F2F2F2;
 	-webkit-text-size-adjust: 100%;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -365,7 +365,7 @@ main {
 }
 html {
 	overflow: auto;
-	background: #f4f4f4 url("/img/bgm.svg") repeat-x;
+	background: #F2F2F2 url("/img/bgm.svg") repeat-x;
 }
 
 main {
@@ -417,10 +417,14 @@ pre code {
 }
 
 kbd {
+	font-size: 13px;
+	color: #636363;
+	vertical-align: middle;
 	background: #FFF;
-	border: 2px outset #CCC;
+	border: 3px outset #CCC;
+	padding: 2px;
 	border-radius: 0.3em;
-	padding: 1px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.23);
 }
 
 figure {
@@ -496,8 +500,8 @@ th {
 	padding: .875rem;
 	margin: .1875rem 0;
 	color: #101010;
-	background-color: #f4f4f4;
-	border-color: #f4f4f4;
+	background-color: #F2F2F2;
+	border-color: #F2F2F2;
 	border-style: solid;
 	border-width: 1px 0;
 	border-bottom: 1px solid #3399ff;
@@ -1020,8 +1024,8 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 .pagination {
 	margin: .3125rem 0;
 	text-align: center;
-	background-color: #f4f4f4;
-	border-color: #f4f4f4;
+	background-color: #F2F2F2;
+	border-color: #F2F2F2;
 }
 
 @media screen and (min-width: 480px) {

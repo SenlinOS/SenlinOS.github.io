@@ -85,29 +85,73 @@
 	<time class="entry__meta-published meta-published" datetime="2018-11-29T00:38:43&#43;08:00">2018-11-29</time>
 	</div>
 				<center><h1 class="entry__title title-bottom">在GNU/Linux中修改T9键盘映射</h1></center>
-				<div class="entry__content"><p>我的初代Delux(多彩)T9单手键盘已经使用3年多了，主要作为软件的快捷键使用。</p>
+				<div class="entry__content"><p><mark>2021-05-08 更新</mark>，将T9键盘的<kbd>音量减VOL-</kbd> 改为<kbd>RMB/鼠标右键</kbd>，<kbd>音量加VOL+</kbd> 改为<kbd>MMB/鼠标中键</kbd></p>
+
+<p><img src="/img/key-to-rmbmmb.jpg" alt="Key-M" /></p>
+
+<ul>
+<li><p>首先在终端用命令行安装 <strong>xkbset</strong>：<code>sudo apt-get install xkbset</code></p></li>
+
+<li><p>然后写一个空文件，命名为 <strong>VOL-M.sh</strong>，复制贴入下面的代码并保存：</p></li>
+</ul>
+
+<pre><code>#！/bin/bash
+
+xkbset m
+xkbset exp =m
+
+xkbcomp &quot;$DISPLAY&quot; - |
+  sed -e 's/ XF86AudioLowerVolume / Pointer_Button3 /' -e '/interpret KP_/,/};/d' |
+  xkbcomp - &quot;$DISPLAY&quot;
+
+xkbcomp &quot;$DISPLAY&quot; - |
+  sed -e 's/ XF86AudioRaiseVolume / Pointer_Button2 /' -e '/interpret KP_/,/};/d' |
+  xkbcomp - &quot;$DISPLAY&quot;
+</code></pre>
+
+<ul>
+<li>右键这个文件点击文件属性选项，在权限中赋予 <strong>执行</strong></li>
+<li>设置自启动，Xubuntu菜单，设置管理器 -&gt; 会话和启动 (应用程序自启动)，点击左下角的+加号按钮填写：
+
+<ul>
+<li>名称：VOL to RMB/MMB</li>
+<li>描述：音量键映射鼠标右键与中键</li>
+<li>命令：点击右侧的文件夹图标，打开刚才写好的 <strong>VOL-M.sh</strong></li>
+<li>点击确定按钮完成</li>
+</ul></li>
+</ul>
+
+<p>这样每次启动电脑时音量键映射到鼠标的键位都会生效，我在 GIMP 与 Blender 中都会用到这些设置。</p>
+
+<blockquote>
+<p>参考/Reference：<a href="https://unix.stackexchange.com/questions/577842/x11-swap-keyboard-key-with-mouse-button/577973#577973">x11 Keyboard keys are mapped to mouse buttons</a></p>
+</blockquote>
+
+<hr />
+
+<p>我的初代Delux(多彩)T9单手键盘已经使用3年多了，主要作为软件的快捷键使用。</p>
 
 <p>现在新T9的型号已经改为T9U，这是我最喜欢的单手键盘版型，双空格、Mode键变换方向键、不需要特殊的驱动，
 而且按键够多～完全够用。
-<br/>手位不动时大拇指就可以操作 <kbd>B</kbd>、<kbd>.</kbd>、<kbd>空格</kbd> 三个按键，这样使操作变得非常灵活。</p>
+<br />手位不动时大拇指就可以操作 <kbd>B</kbd>、<kbd>.</kbd>、<kbd>空格</kbd> 三个按键，这样使操作变得非常灵活。</p>
 
 <p><img src="/img/delux-t9.jpg"/></p>
 
 <p>虽然键盘说明书上没写支持<code>GNU/Linux系统</code>，但在GNU/Linux系统中却是最容易使用。
-<br/>现在讲解在GNU/Linux (我的是Xubuntu系统) 中怎样改变T9键盘的键位映射。</p>
+<br />现在讲解在GNU/Linux (我的是Xubuntu系统) 中怎样改变T9键盘的键位映射。</p>
 
 <p><kbd>F2</kbd>是重命名、<kbd>F5</kbd>是刷新，都是常用键，所以 <kbd>F2</kbd>与<kbd>F5</kbd> 不改变。</p>
 
 <p>需要修改的按键：
-<br/><kbd>F1</kbd> 改为<kbd>Enter</kbd>、<kbd>F3</kbd> 改为<kbd>-减号键</kbd>、<kbd>F4</kbd> 改为<kbd>+加号键</kbd>、<kbd>F6</kbd> 改为<kbd>退格键</kbd></p>
+<br /><kbd>F1</kbd> 改为<kbd>Enter</kbd>、<kbd>F3</kbd> 改为<kbd>-减号键</kbd>、<kbd>F4</kbd> 改为<kbd>+加号键</kbd>、<kbd>F6</kbd> 改为<kbd>退格键</kbd></p>
 
 <p><img src="/img/delux-t9-fkey.jpg"/></p>
 
-<p><strong>使用快捷键 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> 打开终端，使用命令：</strong>
-<br/><code>sudo vi /usr/share/X11/xkb/symbols/pc</code></p>
+<p><strong>使用快捷键</strong> <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> <strong>打开终端，使用命令：</strong>
+<br /><code>sudo vi /usr/share/X11/xkb/symbols/pc</code></p>
 
 <p>按方向键的下键向下滚动光标，找到<code>key &lt;KIUP&gt; { [ XF86KbdBrightnessUp ] };</code>
-<br/>在这行的下面按<code>i</code>键～进入vi编辑模式：</p>
+<br />在这行的下面按<code>i</code>键～进入vi编辑模式：</p>
 
 <ul>
 <li>按 <kbd>Enter</kbd> 空出一行,复制以下代码，点击终端菜单编辑-&gt;粘贴，将代码贴入</li>
@@ -163,17 +207,10 @@ Blog License:
       <div class="pagination">
         <div class="pagination__buttons">
           
-            <span class="button previous">
-              <a href="/post/xubuntu-uefi-grub/">
-                <span class="button__icon">&lt;</span>
-                <span class="button__text">解决安装单系统Xubuntu时grub安装失败</span>
-              </a>
-            </span>
-          
           
             <span class="button next">
-              <a href="/post/gimp-the-focus-automatically-returns-to-the-canvas-window/">
-                <span class="button__text">GIMP焦点自动返回到画布窗口</span>
+              <a href="/post/manually-save-temporary-presets/">
+                <span class="button__text">在 GIMP 中手动保存临时预设</span>
                 <span class="button__icon">></span>
               </a>
             </span>

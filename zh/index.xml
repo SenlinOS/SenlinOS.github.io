@@ -6,10 +6,19 @@
     <description>Recent content on SENLINOS ON THE WEB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Nov 2018 00:38:43 +0800</lastBuildDate>
     
 	<atom:link href="/zh/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>在GNU/Linux中修改T9键盘映射</title>
+      <link>/zh/post/modify-delux-t9-keyboard-mapping/</link>
+      <pubDate>Thu, 29 Nov 2018 00:38:43 +0800</pubDate>
+      
+      <guid>/zh/post/modify-delux-t9-keyboard-mapping/</guid>
+      <description>2021-05-08 更新，将T9键盘的音量减VOL- 改为RMB/鼠标右键，音量加VOL+ 改为MMB/鼠标中键 首先在终端用命令行安装 xkbset：sudo apt-get install xkbset</description>
+    </item>
     
     <item>
       <title>关于</title>
@@ -72,15 +81,6 @@
       
       <guid>/zh/post/xubuntu-uefi-grub/</guid>
       <description>2020-11-21 更新，这个只是 Xubuntu 18.04 系统的问题，现在使用 Xubuntu 20.04 不单独划分EFI分区，只使用 /分区、Home分区也可以正常安装。 我一直贯彻“不使用盗版系统与软件</description>
-    </item>
-    
-    <item>
-      <title>在GNU/Linux中修改T9键盘映射</title>
-      <link>/zh/post/modify-delux-t9-keyboard-mapping/</link>
-      <pubDate>Thu, 29 Nov 2018 00:38:43 +0800</pubDate>
-      
-      <guid>/zh/post/modify-delux-t9-keyboard-mapping/</guid>
-      <description>我的初代Delux(多彩)T9单手键盘已经使用3年多了，主要作为软件的快捷键使用。 现在新T9的型号已经改为T9U，这是我最喜欢的单手键盘版型</description>
     </item>
     
     <item>
