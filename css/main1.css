@@ -1239,6 +1239,21 @@ button .main-nav__btn-box:hover{
 	background: url("/img/note-img.svg") no-repeat 1em center;
 }
 
+#tips {
+	width: 100%;
+	padding: 16px 16px;
+	padding-left: 4em;
+	color: #12365A;
+	text-align: left;
+	background-color: #C8E4FF;
+	margin: 0 auto;
+	border-radius: 0.6em;
+}
+
+.tips-img {
+	background: url("/img/tips-img.svg") no-repeat 1em center;
+}
+
 a{outline:none;}
 a:active{noOutline:expression_r(this.onFocus=this.blur());}
 :focus{outline:0;}
