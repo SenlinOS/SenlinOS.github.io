@@ -145,19 +145,19 @@ Input device name: &quot;HID 0433:0004&quot;
 <br /><code>0003</code>是USB键盘通用的数值，<code>0433</code>与<code>0004</code>就是<code>Input device name</code>中的数值，<code>0111</code>是<code>Input device ID中的version值，x不需要填写</code>。</p>
 
 <ul>
-<li><p><strong>在终端中输入：</strong><code>vi 99-mykeyboard.hwdb</code>，按回车键后，复制下方代码，然后在终端中按 <kbd>MMB/鼠标中键</kbd> 或 <kbd>Shift</kbd>+<kbd>INS</kbd> 进行粘贴：</p>
+<li><strong>在终端中输入：</strong><code>vi 99-mykeyboard.hwdb</code>，按回车键后，复制下方代码，然后在终端中按 <kbd>MMB/鼠标中键</kbd> 或 <kbd>Shift</kbd>+<kbd>INS</kbd> 进行粘贴：</li>
+</ul>
 
 <pre><code>evdev:input:b0003v0433p0004e0111-e0*
-KEYBOARD_KEY_7003a=enter
-KEYBOARD_KEY_7003c=minus
-KEYBOARD_KEY_7003d=kpplus
-KEYBOARD_KEY_7003f=backspace
-KEYBOARD_KEY_c00ea=btn_right
-KEYBOARD_KEY_c00e9=btn_middle
+ KEYBOARD_KEY_7003a=enter
+ KEYBOARD_KEY_7003c=minus
+ KEYBOARD_KEY_7003d=kpplus
+ KEYBOARD_KEY_7003f=backspace
+ KEYBOARD_KEY_c00ea=btn_right
+ KEYBOARD_KEY_c00e9=btn_middle
 </code></pre>
 
-<p>按 <kbd>Esc</kbd>，按 <kbd>:</kbd>（Shift+;）、输入 <strong>wq</strong> 再按 <kbd>Enter</kbd>，完成操作。</p></li>
-</ul>
+<p>按 <kbd>Esc</kbd>，按 <kbd>:</kbd>（Shift+;）、输入 <strong>wq</strong> 再按 <kbd>Enter</kbd>，完成操作。</p>
 
 <p><code>KEYBOARD_KEY_7003a=enter</code>的意思是将 <kbd>F1</kbd> 改为<kbd>Enter/回车键</kbd>，<code>enter</code>等键位的名字可以在终端中列出的信息中搜到，需要使用小写。</p>
 
