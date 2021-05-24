@@ -85,102 +85,94 @@
 	<time class="entry__meta-published meta-published" datetime="2018-11-29T00:38:43&#43;08:00">2018-11-29</time>
 	</div>
 				<center><h1 class="entry__title title-bottom">在GNU/Linux中修改T9键盘映射</h1></center>
-				<div class="entry__content"><p><mark>2021-05-08 更新</mark>，将T9键盘的<kbd>音量减VOL-</kbd> 改为<kbd>RMB/鼠标右键</kbd>，<kbd>音量加VOL+</kbd> 改为<kbd>MMB/鼠标中键</kbd></p>
+				<div class="entry__content"><p><mark>2021-05-24 更新</mark>，删除了以前用的键位映射的方法，因为旧方法是改变系统设置，单手键盘与电脑键盘上的键位一同改变。
+<br />新方法是只改变指定硬件的键位，也就是只改变T9单手键盘的键位，不会影响到电脑键盘。</p>
 
-<p><img src="/img/key-to-rmbmmb.jpg" alt="Key-M" /></p>
+<p><img src="/img/delux-t9.jpg" alt="T9" /></p>
+
+<p>在Xubuntu系统中，按 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> 打开终端：</p>
 
 <ul>
-<li><p>首先在终端用命令行安装 <strong>xkbset</strong>：<code>sudo apt-get install xkbset</code></p></li>
+<li><strong>安装 evtest：</strong><code>sudo apt install evtest</code></li>
+<li><strong>继续命令：</strong><code>sudo evtest</code>，会看到所有设备的列表，“HID 0433:0004”就是T9单手键盘，这时输入它的编号。（HID的前面，每次都不同）</li>
 
-<li><p>然后写一个空文件，命名为 <strong>VOL-M.sh</strong>，复制贴入下面的代码并保存：</p></li>
+<li><p><strong>继续操作</strong>，在列出所有按键信息后，显示<code>Testing ...</code>，这时按T9单手键盘上需要改动的键位，就会列出按键的信息。</p>
+
+<p>按 <kbd>F1</kbd>、<kbd>F3</kbd>、<kbd>F4</kbd>、<kbd>F6</kbd>，按键信息为：</p>
+
+<pre><code>Event: time 1621842064.020258, type 4 (EV_MSC), code 4 (MSC_SCAN), value 7003a
+Event: time 1621842064.020258, type 1 (EV_KEY), code 59 (KEY_F1), value 0
+Event: time 1621842064.020258, -------------- SYN_REPORT ------------
+Event: time 1621842073.220187, type 4 (EV_MSC), code 4 (MSC_SCAN), value 7003c
+Event: time 1621842073.220187, type 1 (EV_KEY), code 61 (KEY_F3), value 0
+Event: time 1621842073.220187, -------------- SYN_REPORT ------------
+Event: time 1621842075.236176, type 4 (EV_MSC), code 4 (MSC_SCAN), value 7003d
+Event: time 1621842075.236176, type 1 (EV_KEY), code 62 (KEY_F4), value 0
+Event: time 1621842075.236176, -------------- SYN_REPORT ------------
+Event: time 1621842077.148162, type 4 (EV_MSC), code 4 (MSC_SCAN), value 7003f
+Event: time 1621842077.148162, type 1 (EV_KEY), code 64 (KEY_F6), value 0
+</code></pre></li>
 </ul>
 
-<pre><code>#！/bin/bash
-
-xkbset m
-xkbset exp =m
-
-xkbcomp &quot;$DISPLAY&quot; - |
-  sed -e 's/ XF86AudioLowerVolume / Pointer_Button3 /' -e '/interpret KP_/,/};/d' |
-  xkbcomp - &quot;$DISPLAY&quot;
-
-xkbcomp &quot;$DISPLAY&quot; - |
-  sed -e 's/ XF86AudioRaiseVolume / Pointer_Button2 /' -e '/interpret KP_/,/};/d' |
-  xkbcomp - &quot;$DISPLAY&quot;
-</code></pre>
+<p>但这时按T9单手键盘的 <kbd>音量减VOL-</kbd> 与 <kbd>音量加VOL+</kbd> 按键时没有反映，因为这些键位在另一个HID中。
+<br />按 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 终止以上操作，再次使用命令<code>sudo evtest</code>，输入“HID 0433:0004 Consumer Control”的编号。（HID的前面，每次都不同）</p>
 
 <ul>
-<li>右键这个文件点击文件属性选项，在权限中赋予 <strong>执行</strong></li>
-<li>设置自启动，Xubuntu菜单，设置管理器 -&gt; 会话和启动 (应用程序自启动)，点击左下角的+加号按钮填写：
+<li><p>按 <kbd>音量减VOL-</kbd> 与 <kbd>音量加VOL+</kbd>，按键信息为：</p>
 
-<ul>
-<li>名称：VOL to RMB/MMB</li>
-<li>描述：音量键映射鼠标右键与中键</li>
-<li>命令：点击右侧的文件夹图标，打开刚才写好的 <strong>VOL-M.sh</strong></li>
-<li>点击确定按钮完成</li>
-</ul></li>
+<pre><code>Event: time 1621842580.201548, type 4 (EV_MSC), code 4 (MSC_SCAN), value c00ea
+Event: time 1621842580.201548, type 1 (EV_KEY), code 114 (KEY_VOLUMEDOWN), value 0
+Event: time 1621842580.201548, -------------- SYN_REPORT ------------
+Event: time 1621842583.329525, type 4 (EV_MSC), code 4 (MSC_SCAN), value c00e9
+Event: time 1621842583.329525, type 1 (EV_KEY), code 115 (KEY_VOLUMEUP), value 0
+</code></pre></li>
 </ul>
 
-<p>这样每次启动电脑时音量键映射到鼠标的键位都会生效，我在 GIMP 与 Blender 中都会用到这些设置。</p>
+<p>按 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 终止以上操作。</p>
 
-<blockquote>
-<p>参考/Reference：<a href="https://unix.stackexchange.com/questions/577842/x11-swap-keyboard-key-with-mouse-button/577973#577973">X11 Keyboard keys are mapped to mouse buttons</a></p>
-</blockquote>
+<p>以上就是我们需要的键位信息，<code>(EV_MSC), code 4 (MSC_SCAN), value 7003a</code> 中的<code>7003a</code>是需要使用的键位码号。
+<br />样式为：<strong>KEYBOARD_KEY_7003a</strong>，其他按键替换键位码号即可。</p>
 
 <hr />
 
-<p>我的初代Delux(多彩)T9单手键盘已经使用3年多了，主要作为软件的快捷键使用。</p>
+<p>在列出的T9单手键盘的设备列表中可以看到设备的<code>evdev:input</code>信息：</p>
 
-<p>现在新T9的型号已经改为T9U，这是我最喜欢的单手键盘版型，双空格、Mode键变换方向键、不需要特殊的驱动，
-而且按键够多～完全够用。
-<br />手位不动时大拇指就可以操作 <kbd>B</kbd>、<kbd>.</kbd>、<kbd>空格</kbd> 三个按键，这样使操作变得非常灵活。</p>
-
-<p><img src="/img/delux-t9.jpg"/></p>
-
-<p>虽然键盘说明书上没写支持<code>GNU/Linux系统</code>，但在GNU/Linux系统中却是最容易使用。
-<br />现在讲解在GNU/Linux (我的是Xubuntu系统) 中怎样改变T9键盘的键位映射。</p>
-
-<p><kbd>F2</kbd>是重命名、<kbd>F5</kbd>是刷新，都是常用键，所以 <kbd>F2</kbd>与<kbd>F5</kbd> 不改变。</p>
-
-<p>需要修改的按键：
-<br /><kbd>F1</kbd> 改为<kbd>Enter</kbd>、<kbd>F3</kbd> 改为<kbd>-减号键</kbd>、<kbd>F4</kbd> 改为<kbd>+加号键</kbd>、<kbd>F6</kbd> 改为<kbd>退格键</kbd></p>
-
-<p><img src="/img/delux-t9-fkey.jpg"/></p>
-
-<p><strong>使用快捷键</strong> <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> <strong>打开终端，使用命令：</strong>
-<br /><code>sudo vi /usr/share/X11/xkb/symbols/pc</code></p>
-
-<p>按方向键的下键向下滚动光标，找到<code>key &lt;KIUP&gt; { [ XF86KbdBrightnessUp ] };</code>
-<br />在这行的下面按<code>i</code>键～进入vi编辑模式：</p>
-
-<ul>
-<li>按 <kbd>Enter</kbd> 空出一行,复制以下代码，点击终端菜单编辑-&gt;粘贴，将代码贴入</li>
-</ul>
-
-<pre><code>key &lt;FK01&gt; { [Return] };
-key &lt;FK03&gt; { [KP_Subtract] };
-key &lt;FK04&gt; { [KP_Add] };
-key &lt;FK06&gt; { [BackSpace] };
-key &lt;FK10&gt; { [F3] };
+<pre><code>Input device ID: bus 0x3 vendor 0x433 product 0x4 version 0x111
+Input device name: &quot;HID 0433:0004&quot;
 </code></pre>
 
-<p><mark>2020-01-17 更新，因为LibreOffice中需要使用 <kbd>F3</kbd>，所以将 <kbd>F10</kbd> 改为<kbd>F3</kbd>。</mark></p>
+<p>使用的样式为：<code>b0003v0433p0004e0111-e0*</code>，b0003、v0433、p0004、e0111：
+<br /><code>0003</code>是USB键盘通用的数值，<code>0433</code>与<code>0004</code>就是<code>Input device name</code>中的数值，<code>0111</code>是<code>Input device ID中的version值，x不需要填写</code>。</p>
 
 <ul>
-<li>按 <kbd>Enter</kbd> 空出一行</li>
+<li><p><strong>在终端中输入：</strong><code>vi 99-mykeyboard.hwdb</code>，按回车键后，复制下方代码，然后在终端中按 <kbd>MMB/鼠标中键</kbd> 或 <kbd>Shift</kbd>+<kbd>INS</kbd> 进行粘贴：</p>
+
+<pre><code>evdev:input:b0003v0433p0004e0111-e0*
+KEYBOARD_KEY_7003a=enter
+KEYBOARD_KEY_7003c=minus
+KEYBOARD_KEY_7003d=kpplus
+KEYBOARD_KEY_7003f=backspace
+KEYBOARD_KEY_c00ea=btn_right
+KEYBOARD_KEY_c00e9=btn_middle
+</code></pre>
+
+<p>按 <kbd>Esc</kbd>，按 <kbd>:</kbd>（Shift+;）、输入 <strong>wq</strong> 再按 <kbd>Enter</kbd>，完成操作。</p></li>
 </ul>
 
-<p>按 <kbd>Esc</kbd>，退出vi编辑模式，按 <kbd>:</kbd>（Shift+;）,
-<br />输入 <strong>wq</strong> 再按 <kbd>Enter</kbd>，保存并退出。</p>
+<p><code>KEYBOARD_KEY_7003a=enter</code>的意思是将 <kbd>F1</kbd> 改为<kbd>Enter/回车键</kbd>，<code>enter</code>等键位的名字可以在终端中列出的信息中搜到，需要使用小写。</p>
 
-<p><img src="/img/vi-t9.jpg"/></p>
+<ul>
+<li><strong>继续命令：</strong><code>sudo cp 99-mykeyboard.hwdb /etc/udev/hwdb.d</code> 与
+<br /><code>sudo systemd-hwdb update &amp;&amp; sudo udevadm control --reload &amp;&amp; sudo udevadm trigger</code></li>
+</ul>
 
-<p>在终端中输入命令：<code>sudo rm -rf /var/lib/xkb/*</code>
-<br />按 <kbd>Enter</kbd> 后，输入密码执行命令。</p>
+<p><img src="/img/delux-t9-fkey.jpg" alt="T9" /></p>
 
-<p><code>重启电脑</code>后T9键盘的修改键位映射就可以生效了。</p>
+<p>现在T9单手键盘的键鼠位映射已经完成，并实时生效，不需要重启系统，修改也不会影响到电脑键盘～太酷了！</p>
 
-<p>替换了这些键位后，T9操作会变得更加得心应手 :)</p>
+<blockquote>
+<p>参考/Reference：<a href="https://github.com/DIGImend/digimend-kernel-drivers/issues/474">https://github.com/DIGImend/digimend-kernel-drivers/issues/474</a></p>
+</blockquote>
 
 <hr />
 
