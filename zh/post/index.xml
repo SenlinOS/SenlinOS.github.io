@@ -6,10 +6,19 @@
     <description>Recent content in Posts on SENLINOS ON THE WEB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Nov 2018 00:38:43 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2020 20:05:55 +0800</lastBuildDate>
     
 	<atom:link href="/zh/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>我的新项目 SLOS-GIMPainter 发布</title>
+      <link>/zh/post/slos-gimpainter-released/</link>
+      <pubDate>Tue, 23 Jun 2020 20:05:55 +0800</pubDate>
+      
+      <guid>/zh/post/slos-gimpainter-released/</guid>
+      <description>SLOS-GIMPainter 项目地址：GitHub SLOS-GIMPainter 是为 GIMP 2.10.20 或更高版本的画笔包。 The English description is in the project. SLOS-GIMPainter 稳定版 总计：115个 = 107个画笔 + 8个工具 2021-06-17 更新： 增加了5个画笔。详</description>
+    </item>
     
     <item>
       <title>在GNU/Linux中修改T9键盘映射</title>
@@ -27,15 +36,6 @@
       
       <guid>/zh/post/manually-save-temporary-presets/</guid>
       <description>Manually save temporary presets in GIMP, English “ 如果 GIMP 可以临时保存画笔尺寸就好了！” 这是我想要的一个功能，但 GIMP 似乎没有这个功能！ 不过今天我偶然发现了这个特性：在 GIMP 中手动保存</description>
-    </item>
-    
-    <item>
-      <title>我的新项目 SLOS-GIMPainter 发布</title>
-      <link>/zh/post/slos-gimpainter-released/</link>
-      <pubDate>Tue, 23 Jun 2020 20:05:55 +0800</pubDate>
-      
-      <guid>/zh/post/slos-gimpainter-released/</guid>
-      <description>SLOS-GIMPainter 项目地址：GitHub SLOS-GIMPainter 是为 GIMP 2.10.20 或更高版本的画笔包。 The English description is in the project. 2021-01-09 更新： 总计：110个 = 102个画笔 + 8个工具 改进：016_Digita</description>
     </item>
     
     <item>
